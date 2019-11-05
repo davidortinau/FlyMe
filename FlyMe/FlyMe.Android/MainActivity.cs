@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Graphics;
 
 namespace FlyMe.Droid
 {
@@ -19,7 +20,10 @@ namespace FlyMe.Droid
 
             base.OnCreate(savedInstanceState);
 
+            this.SetStatusBarColor(Color.Black);
+
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }

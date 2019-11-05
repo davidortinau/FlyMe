@@ -6,6 +6,11 @@
              mc:Ignorable="d"
              x:Class="FlyMe.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:Key="FontAwesome"
+                x:TypeArguments="x:String"
+                Android="fa-solid-900.ttf#Font Awesome 5 Free"
+                iOS="Font Awesome 5 Free" />
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
