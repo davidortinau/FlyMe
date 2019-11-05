@@ -49,6 +49,7 @@
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -131,7 +132,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\FlyMe\FlyMe.csproj">
-      <Project>{CFF80D91-B8B2-4638-A717-89D286EE1633}</Project>
+      <Project>{3ED26151-0828-4F80-8B66-74869817A097}</Project>
       <Name>FlyMe</Name>
     </ProjectReference>
   </ItemGroup>

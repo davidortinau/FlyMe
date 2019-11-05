@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -94,7 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FlyMe\FlyMe.csproj">
-      <Project>{CFF80D91-B8B2-4638-A717-89D286EE1633}</Project>
+      <Project>{3ED26151-0828-4F80-8B66-74869817A097}</Project>
       <Name>FlyMe</Name>
     </ProjectReference>
   </ItemGroup>
