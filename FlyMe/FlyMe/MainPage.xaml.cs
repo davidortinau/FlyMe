@@ -8,14 +8,26 @@ using Xamarin.Forms;
 
 namespace FlyMe
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
+    [QueryProperty(nameof(From), "from")]
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        public string From
+        {
+            set
+            {
+                FromLabel.Text = value;
+            }
+        }
+
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Shell.Current.GoToAsync("results");
         }
     }
 }

@@ -1,173 +1,210 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:local="clr-namespace:FlyMe"
-             mc:Ignorable="d"
-             Visual="Material"
-             x:Class="FlyMe.MainPage">
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:FlyMe"
+    mc:Ignorable="d"
+    Title="Book a Flight"
+    Visual="Material"
+    x:Class="FlyMe.MainPage">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="120"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition
+                Height="120" />
+            <RowDefinition
+                Height="*" />
         </Grid.RowDefinitions>
 
-        <BoxView Grid.Row="0" BackgroundColor="#5561F9"/>
+        <BoxView
+            Grid.Row="0"
+            BackgroundColor="#5561F9" />
 
-        <Label Text="Search Flights" Grid.Row="0"
-               Margin='{OnPlatform iOS="15,50", Default="15,30"}'
-               HorizontalOptions="Center"
-               FontSize="16"
-               TextColor="White"/>
+        <ScrollView
+            Grid.Row="1"
+            Margin="0,-40,0,0">
+            <Frame
+                Margin="15,0"
+                BackgroundColor="White">
+                <FlexLayout
+                    Direction="Row"
+                    Wrap="Wrap"
+                    JustifyContent="SpaceBetween"
+                    AlignItems="Start"
+                    AlignContent="Start">
 
-        <Image 
-               Margin='{OnPlatform iOS="15,54,0,0", Default="15,34,0,0"}'
-                Grid.Row="0"
-                HorizontalOptions="Start"
-                VerticalOptions="Start"
-                BackgroundColor="Transparent"
-                >
-            <Image.Source>
-                <FontImageSource
-                    Glyph="{x:Static local:IconFont.ChevronLeft}"
-                    FontFamily="{StaticResource FontAwesome}"
-                    Color="White"
-                    Size="12"/>
-            </Image.Source>
-        </Image>
+                    <Entry
+                        x:Name="FromLabel"
+                        Placeholder="From" />
+                    <BoxView
+                        class="spacer-bar" />
+                    <Image
+                        FlexLayout.AlignSelf="Center">
+                        <Image.Source>
+                            <FontImageSource
+                                FontFamily="{StaticResource FontAwesome}"
+                                Size="14"
+                                Glyph="{x:Static local:IconFont.Plane}"
+                                Color="#000000" />
+                        </Image.Source>
+                    </Image>
+                    <BoxView
+                        class="spacer-bar" />
+                    <Entry
+                        Placeholder="To" />
 
-        <Frame Grid.Row="1" Margin="15,-40,15,0"
-               BackgroundColor="White"
-               >
-            <FlexLayout
-                Direction="Row"
-                Wrap="Wrap"
-                JustifyContent="SpaceBetween"
-                AlignItems="Start"
-                AlignContent="Start"
-                >
+                    <BoxView
+                        class="separator" />
 
-                <Entry Placeholder="From"/>
-                <BoxView class="spacer-bar"/>
-                <Image FlexLayout.AlignSelf="Center">
-                    <Image.Source>
-                        <FontImageSource
-                            FontFamily="{StaticResource FontAwesome}"
-                            Size="14"
-                            Glyph="{x:Static local:IconFont.Plane}"
-                            Color="#000000"/>
-                    </Image.Source>
-                </Image>
-                <BoxView class="spacer-bar"/>
-                <Entry Placeholder="To" />
+                    <Grid
+                        FlexLayout.Basis="100%">
+                        <Grid.RowDefinitions>
+                            <RowDefinition
+                                Height="24" />
+                            <RowDefinition
+                                Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                        </Grid.ColumnDefinitions>
 
-                <BoxView class="separator"/>
+                        <Label
+                            FontSize="14"
+                            TextColor="#ff979797">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span
+                                        Text="Depart " />
+                                    <Span
+                                        Text="{x:Static local:IconFont.Calendar}"
+                                        FontFamily="{StaticResource FontAwesome}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
 
-                <Grid FlexLayout.Basis="100%">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="24"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
+                        <DatePicker
+                            Grid.Row="1"
+                            Margin="0,-16,0,0" />
 
-                    <Label FontSize="14" TextColor="#ff979797">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="Depart "/>
-                                <Span Text="{x:Static local:IconFont.Calendar}" FontFamily="{StaticResource FontAwesome}"/>
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
+                        <Label
+                            Grid.Column="1"
+                            FontSize="14"
+                            TextColor="#ff979797">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span
+                                        Text="Return " />
+                                    <Span
+                                        Text="{x:Static local:IconFont.Calendar}"
+                                        FontFamily="{StaticResource FontAwesome}" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
 
-                    <DatePicker Grid.Row="1" Margin="0,-16,0,0"/>
+                        <DatePicker
+                            Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="0,-16,0,0" />
 
-                    <Label Grid.Column="1" FontSize="14" TextColor="#ff979797">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="Return "/>
-                                <Span Text="{x:Static local:IconFont.Calendar}" FontFamily="{StaticResource FontAwesome}"/>
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
+                    </Grid>
 
-                    <DatePicker Grid.Row="1" Grid.Column="1" Margin="0,-16,0,0" />
+                    <BoxView
+                        class="separator" />
 
-                </Grid>
+                    <Label
+                        Text="Passengers"
+                        FontSize="14"
+                        FlexLayout.Basis="100%"
+                        Margin="0,0,0,8"
+                        TextColor="#ff979797" />
 
-                <BoxView class="separator"/>
+                    <Grid
+                        FlexLayout.Basis="100%">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="2*" />
+                            <ColumnDefinition
+                                Width="1*" />
+                        </Grid.ColumnDefinitions>
 
-                <Label Text="Passengers"
-                       FontSize="14"
-                       FlexLayout.Basis="100%"
-                       Margin="0,0,0,8"
-                       TextColor="#ff979797"/>
+                        <Label
+                            Grid.Column="0">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span
+                                        Text="David Ortinau&#x0a;"
+                                        FontSize="18"
+                                        TextColor="#255EF5" />
+                                    <Span
+                                        Text="david.ortinau@microsoft.com"
+                                        FontSize="12"
+                                        TextColor="#060B06" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
 
-                <Grid FlexLayout.Basis="100%">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
+                        <Frame
+                            Grid.Column="1"
+                            VerticalOptions="Center"
+                            HorizontalOptions="End"
+                            CornerRadius="20"
+                            HeightRequest="20"
+                            Padding="10"
+                            BackgroundColor="#255EF5"
+                            HasShadow="False">
+                            <Label
+                                Text="27-D"
+                                TextColor="White"
+                                FontSize="12"
+                                Margin="15,0"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center" />
+                        </Frame>
 
-                    <Label Grid.Column="0">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="David Ortinau&#x0a;" FontSize="18" TextColor="#255EF5" />
-                                <Span Text="david.ortinau@microsoft.com" FontSize="12" TextColor="#060B06"/>
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
+                    </Grid>
 
-                    <Frame 
-                        Grid.Column="1"
-                        VerticalOptions="Center"
-                        HorizontalOptions="End"
-                        CornerRadius="20" 
-                        HeightRequest="20" 
-                        Padding="10"
-                        BackgroundColor="#255EF5" 
-                        HasShadow="False">
-                        <Label Text="27-D" TextColor="White" 
-                               FontSize="12"
-                               Margin="15,0"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"/>
-                    </Frame>
-                    
-                </Grid>
+                    <Button
+                        FlexLayout.Basis="100%"
+                        Text="+ Add Passenger"
+                        BorderColor="#66060B06"
+                        BorderWidth="1"
+                        TextColor="#66060B06"
+                        FontSize="14"
+                        Margin="0,15,0,0"
+                        BackgroundColor="White" />
 
-                <Button 
-                    FlexLayout.Basis="100%"
-                    Text="+ Add Passenger"
-                    BorderColor="#060B06"
-                    BorderWidth="1"
-                    TextColor="#060B06"
-                    FontSize="14"
-                    Margin="0,15,0,0"
-                    BackgroundColor="White"/>
+                    <BoxView
+                        class="separator" />
 
-                <BoxView class="separator"/>
+                    <StackLayout
+                        Orientation="Horizontal"
+                        Spacing="4">
+                        <CheckBox
+                            VerticalOptions="Center"
+                            Color="#255EF5" />
+                        <Label
+                            Text="Non-stop Only"
+                            VerticalOptions="Center" />
+                    </StackLayout>
 
-                <StackLayout Orientation="Horizontal" Spacing="4">
-                    <CheckBox VerticalOptions="Center" Color="#255EF5" />
-                    <Label Text="Non-stop Only" VerticalOptions="Center"/>
-                </StackLayout>
+                    <Button
+                        FlexLayout.Basis="100%"
+                        BackgroundColor="#255EF5"
+                        HeightRequest="44"
+                        CornerRadius="22"
+                        TextColor="#ffffff"
+                        Margin="0,15"
+                        Clicked="Button_Clicked"
+                        Text="Search Flights" />
 
-                <Button 
-                    FlexLayout.Basis="100%"
-                    BackgroundColor="#255EF5"
-                    HeightRequest="44"
-                    CornerRadius="22"
-                    TextColor="#ffffff"
-                    Text="Search Flights"/>
-
-            </FlexLayout>
-        </Frame>
-        
+                </FlexLayout>
+            </Frame>
+        </ScrollView>
     </Grid>
 
     <ContentPage.Resources>
@@ -210,7 +247,7 @@
                 
             
             ]]>
-            
+
         </StyleSheet>
     </ContentPage.Resources>
 

@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:FlyMe"
              mc:Ignorable="d"
              x:Class="FlyMe.App">
     <Application.Resources>
@@ -11,6 +12,55 @@
                 x:TypeArguments="x:String"
                 Android="fa-solid-900.ttf#Font Awesome 5 Free"
                 iOS="Font Awesome 5 Free" />
+
+            <Style x:Key="BaseStyle"
+                   TargetType="Element">
+                <Setter Property="Shell.BackgroundColor"
+                        Value="#5561F9" />
+                <Setter Property="Shell.ForegroundColor"
+                        Value="#ffffff" />
+                <Setter Property="Shell.TitleColor"
+                        Value="White" />
+                <Setter Property="Shell.DisabledColor"
+                        Value="#B4FFFFFF" />
+                <Setter Property="Shell.UnselectedColor"
+                        Value="#CC0000" />                
+            </Style>
+
+            <Style BasedOn="{StaticResource BaseStyle}"
+                   ApplyToDerivedTypes="True"
+                   TargetType="FlyoutItem" />
+
+            <Style BasedOn="{StaticResource BaseStyle}"
+                   ApplyToDerivedTypes="True"
+                   TargetType="TabBar" />
+
+            <Color x:Key="ColorTabIcon">Gray</Color>
+            <x:Double x:Key="SizeTabIcon">24</x:Double>
+
+            <FontImageSource x:Key="IconTabBook"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.TicketAlt}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+            <FontImageSource x:Key="IconTabMyFlights"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.PersonBooth}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+            <FontImageSource x:Key="IconTabToday"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.CalendarDay}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+            <FontImageSource x:Key="IconTabNotifications"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.Bell}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

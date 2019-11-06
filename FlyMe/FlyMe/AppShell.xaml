@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Shell
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FlyMe"
+    Visual="Material"
+    x:Class="FlyMe.AppShell">
+
+    <FlyoutItem Title="My Flights" Icon="{StaticResource IconTabMyFlights}">
+        <ShellContent ContentTemplate="{DataTemplate local:MyFlightsPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Today" Icon="{StaticResource IconTabToday}">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Book" Route="book" Icon="{StaticResource IconTabBook}">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Notifications" Icon="{StaticResource IconTabNotifications}">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+    </FlyoutItem>
+
+    <!--<TabBar>
+        <Tab Title="My Flights" Icon="{StaticResource IconTabMyFlights}">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="Today" Icon="{StaticResource IconTabToday}">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="Book" Route="book" Icon="{StaticResource IconTabBook}">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="Notifications" Icon="{StaticResource IconTabNotifications}">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+    </TabBar>-->
+
+</Shell>
