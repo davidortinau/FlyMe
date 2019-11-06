@@ -49,14 +49,14 @@ namespace FlyMe.ViewModels
         {
             get
             {
-                return "3:30PM";
+                return DepartDateTime.ToShortTimeString();
             }
         }
-        public string ReturnTime
+        public string ArrivalTime
         {
             get
             {
-                return "6:15PM";
+                return ArrivalDateTime.ToShortTimeString();
             }
         }
     }

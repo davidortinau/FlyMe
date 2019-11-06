@@ -103,7 +103,7 @@
                                         <Span
                                             Text=" " />
                                         <Span
-                                            Text="{Binding ReturnTime}" />
+                                            Text="{Binding ArrivalTime}" />
 
                                     </FormattedString>
                                 </Label.FormattedText>
