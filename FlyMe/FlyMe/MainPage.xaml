@@ -5,8 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:FlyMe"
              mc:Ignorable="d"
-             BackgroundColor="#D8D8D8"
-             Visual="Default"
+             Visual="Material"
              x:Class="FlyMe.MainPage">
 
     <Grid>
@@ -33,9 +32,9 @@
             <Image.Source>
                 <FontImageSource
                     Glyph="{x:Static local:IconFont.ChevronLeft}"
-                FontFamily="{StaticResource FontAwesome}"
-                Color="White"
-                Size="12"/>
+                    FontFamily="{StaticResource FontAwesome}"
+                    Color="White"
+                    Size="12"/>
             </Image.Source>
         </Image>
 
@@ -62,7 +61,7 @@
                     </Image.Source>
                 </Image>
                 <BoxView class="spacer-bar"/>
-                <Entry Placeholder="To"/>
+                <Entry Placeholder="To" />
 
                 <BoxView class="separator"/>
 
@@ -174,8 +173,7 @@
     <ContentPage.Resources>
         <StyleSheet>
             <![CDATA[
-            
-                .spacer-bar {
+            .spacer-bar {
                     background-color: #D8D8D8;
                     height: 1;
                     align-self: center;
@@ -205,6 +203,11 @@
             ^DatePicker {
                 background-color: transparent;
             }
+
+            ^ContentPage {
+                background-color: #D8D8D8;
+            }
+                
             
             ]]>
             
