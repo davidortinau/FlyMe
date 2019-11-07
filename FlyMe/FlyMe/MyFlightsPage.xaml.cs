@@ -14,7 +14,7 @@ namespace FlyMe
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            Shell.Current.GoToAsync("//book?from=STL");//?from=STL
+            Shell.Current.GoToAsync("//book?from=STL");
         }
     }
 }

@@ -6,12 +6,15 @@
     Visual="Material"
     x:Class="FlyMe.AppShell">
 
+
     <FlyoutItem Title="My Flights" Icon="{StaticResource IconTabMyFlights}">
         <ShellContent ContentTemplate="{DataTemplate local:MyFlightsPage}"/>
     </FlyoutItem>
+
     <FlyoutItem Title="Today" Icon="{StaticResource IconTabToday}">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
     </FlyoutItem>
+    
     <FlyoutItem Title="Book" Route="book" Icon="{StaticResource IconTabBook}">
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
     </FlyoutItem>

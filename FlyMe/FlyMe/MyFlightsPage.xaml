@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FlyMe"
     Title=""
-    Visual="Material"
     BackgroundColor="#D8D8D8"
     x:Class="FlyMe.MyFlightsPage">
 
@@ -13,7 +12,7 @@
             <RowDefinition
                 Height="*" />
             <RowDefinition
-                Height="*" />
+                Height="300" />
         </Grid.RowDefinitions>
 
         <BoxView
@@ -33,7 +32,7 @@
 
             <Label
                 TextColor="White"
-                Margin="0,0,0,40"
+                Margin="0,0,0,20"
                 FlexLayout.Basis="100%">
                 <Label.FormattedText>
                     <FormattedString>
@@ -52,14 +51,14 @@
                 LineBreakMode="WordWrap"
                 FontSize="14"
                 TextColor="White"
-                FlexLayout.Basis="20%"
+                FlexLayout.Basis="30%"
                 FlexLayout.AlignSelf="End" />
 
             <Label
                 Text="1,562,098"
                 FontSize="32"
                 TextColor="White"
-                FlexLayout.Basis="80%"
+                FlexLayout.Basis="70%"
                 HorizontalOptions="End"
                 HorizontalTextAlignment="End"
                 FlexLayout.AlignSelf="End" />
@@ -187,7 +186,7 @@
 
             <Grid
                 FlexLayout.Basis="100%"
-                Margin="0,0,0,20">
+                Margin="0,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition
                         Height="30" />

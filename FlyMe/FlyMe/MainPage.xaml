@@ -7,7 +7,6 @@
     xmlns:local="clr-namespace:FlyMe"
     mc:Ignorable="d"
     Title="Book a Flight"
-    Visual="Material"
     x:Class="FlyMe.MainPage">
 
     <Grid>
@@ -22,9 +21,47 @@
             Grid.Row="0"
             BackgroundColor="#5561F9" />
 
+        <CollectionView Grid.Row="0" Margin="15,0,0,40" HorizontalOptions="Fill">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal"    
+                                   SnapPointsType="MandatorySingle"
+                                   SnapPointsAlignment="Start"
+                                   ItemSpacing="10"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type local:FlightType}">
+                    <local:FlightType Icon="{x:Static local:IconFont.PaperPlane}" Title="One Way"/>
+                    <local:FlightType Icon="{x:Static local:IconFont.DotCircle}" Title="Round Trip"/>
+                    <local:FlightType Icon="{x:Static local:IconFont.City}" Title="Multi-City"/>
+                    <local:FlightType Icon="{x:Static local:IconFont.MapMarked}" Title="Tourism"/>
+                </x:Array>
+            </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="#1B45B3" HasShadow="False" CornerRadius="8">
+                        <StackLayout>
+                            <Image HorizontalOptions="Center">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{StaticResource FontAwesome}"
+                                        Glyph="{Binding Icon}"
+                                        Color="#66FFFFFF"
+                                        Size="16"/>
+                                </Image.Source>
+                            </Image>
+                            <Label Text="{Binding Title}" 
+                                   FontSize="12"
+                                   TextColor="#66FFFFFF"
+                                   HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
         <ScrollView
             Grid.Row="1"
-            Margin="0,-40,0,0">
+            Margin="0,-30,0,0">
             <Frame
                 Margin="15,0"
                 BackgroundColor="White">
