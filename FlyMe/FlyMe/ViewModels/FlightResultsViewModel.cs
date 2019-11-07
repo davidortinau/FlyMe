@@ -45,6 +45,8 @@ namespace FlyMe.ViewModels
 
         public List<Flight> Flights { get; set; }
 
+        public List<Flight> FlightsEmpty { get; set; } = new List<Flight>();
+
         Random random = new Random();
 
         private void InitData()
