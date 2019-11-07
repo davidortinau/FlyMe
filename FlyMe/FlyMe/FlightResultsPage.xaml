@@ -29,7 +29,16 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <local:ResultViewB />
+                    <local:ResultViewB>
+                        <local:ResultViewB.GestureRecognizers>
+                            <TapGestureRecognizer
+                                Command="{Binding 
+                                    Source={RelativeSource 
+                                    AncestorType={x:Type vm:FlightResultsViewModel}}, 
+                                        Path=GoToDetailsCommand}"
+                                CommandParameter="{Binding .}"/>
+                        </local:ResultViewB.GestureRecognizers>
+                    </local:ResultViewB>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

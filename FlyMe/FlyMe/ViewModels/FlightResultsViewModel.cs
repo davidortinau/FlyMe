@@ -9,11 +9,18 @@ namespace FlyMe.ViewModels
     public class FlightResultsViewModel : BaseViewModel
     {
         public Command LoadMoreFlightsCommand { get; set; }
+        public Command GoToDetailsCommand { get; set; }
         public FlightResultsViewModel()
         {
             LoadMoreFlightsCommand = new Command(LoadMore);
+            GoToDetailsCommand = new Command<Flight>(GoToDetails);
 
             InitData();
+        }
+
+        private void GoToDetails(Flight obj)
+        {
+            Shell.Current.DisplayAlert("Maybe Next Demo", $"So, you wanna go from {obj.From} to {obj.To}, eh?", "G'bye");
         }
 
         int batchSize = 10;
