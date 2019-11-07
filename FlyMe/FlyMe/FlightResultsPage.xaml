@@ -8,37 +8,36 @@
     x:Class="FlyMe.FlightResultsPage">
 
     <ContentPage.BindingContext>
-        <vm:FlightResultsViewModel />
+        <vm:FlightResultsViewModel x:Name="vm" />
     </ContentPage.BindingContext>
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <CollectionView
             ItemsSource="{Binding FlightsToDisplay}"
             RemainingItemsThreshold="0"
             RemainingItemsThresholdReachedCommand="{Binding LoadMoreFlightsCommand}"
             Margin="15">
             <CollectionView.ItemsLayout>
-                <GridItemsLayout
-                    HorizontalItemSpacing="8"
-                    VerticalItemSpacing="8"
-                    Span="2"
+                <LinearItemsLayout
+                    ItemSpacing="8"
                     Orientation="Vertical" />
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <local:ResultViewB>
-                        <local:ResultViewB.GestureRecognizers>
+                    <local:ResultViewA>
+                        <local:ResultViewA.GestureRecognizers>
                             <TapGestureRecognizer
                                 Command="{Binding 
                                     Source={RelativeSource 
                                     AncestorType={x:Type vm:FlightResultsViewModel}}, 
                                         Path=GoToDetailsCommand}"
                                 CommandParameter="{Binding .}"/>
-                        </local:ResultViewB.GestureRecognizers>
-                    </local:ResultViewB>
+                        </local:ResultViewA.GestureRecognizers>
+                    </local:ResultViewA>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

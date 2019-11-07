@@ -24,7 +24,7 @@
                 HorizontalTextAlignment="Center"
                 VerticalOptions="End"
                 VerticalTextAlignment="Center"
-                BackgroundColor="Orange" 
+                BackgroundColor="OrangeRed" 
                 Padding="8" 
                 TextColor="White">
                 <Label.FormattedText>
