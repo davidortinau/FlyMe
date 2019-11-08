@@ -16,14 +16,14 @@ Shell introduces a simplified way to express the navigation UI of your applicati
 
 # Screenshots
 
-[!book tabs](Screenshots/book_tabs_droid.png)
+![book tabs](Screenshots/book_tabs_droid.png)
 
-[!my flights tabs](Screenshots/myflights_tabs_droid.png)
+![my flights tabs](Screenshots/myflights_tabs_droid.png)
 
-[!results horizontal](Screenshots/results_horizontal_droid.png)
+![results horizontal](Screenshots/results_horizontal_droid.png)
 
-[!results vertical](Screenshots/results_vertical_droid.png)
+![results vertical](Screenshots/results_vertical_droid.png)
 
-[!my flights flyout](Screenshots/myflights_flyout_droid.png)
+![my flights flyout](Screenshots/myflights_flyout_droid.png)
 
-[!flyout open](Screenshots/flyout_droid.png)
+![flyout open](Screenshots/flyout_droid.png)
