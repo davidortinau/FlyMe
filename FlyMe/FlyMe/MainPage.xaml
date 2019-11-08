@@ -6,6 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:FlyMe"
     mc:Ignorable="d"
+    Shell.NavBarIsVisible="True"
     Title="Book a Flight"
     x:Class="FlyMe.MainPage">
 

@@ -6,7 +6,6 @@
     Visual="Material"
     x:Class="FlyMe.AppShell">
 
-
     <FlyoutItem Title="My Flights" Icon="{StaticResource IconTabMyFlights}">
         <ShellContent ContentTemplate="{DataTemplate local:MyFlightsPage}"/>
     </FlyoutItem>
@@ -22,12 +21,37 @@
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
     </FlyoutItem>
 
+
+
+    <Shell.FlyoutHeader>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="#5561F9"/>
+
+            <Image VerticalOptions="Center"
+                HorizontalOptions="Center">
+                <Image.Source>
+                    <FontImageSource
+                    Glyph="{x:Static local:IconFont.PaperPlane}"
+                    FontFamily="{StaticResource FontAwesome}"
+                    Size="32"
+                    Color="GhostWhite"
+                    />
+
+                </Image.Source>
+            </Image>
+        </Grid>
+    </Shell.FlyoutHeader>
+
+
     <!--<TabBar>
         <Tab Title="My Flights" Icon="{StaticResource IconTabMyFlights}">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+            <ShellContent ContentTemplate="{DataTemplate local:MyFlightsPage}"/>
         </Tab>
         <Tab Title="Today" Icon="{StaticResource IconTabToday}">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+            <ShellContent ContentTemplate="{DataTemplate local:FlightResultsPage}"/>
         </Tab>
         <Tab Title="Book" Route="book" Icon="{StaticResource IconTabBook}">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
@@ -37,4 +61,5 @@
         </Tab>
     </TabBar>-->
 
+    
 </Shell>
