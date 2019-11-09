@@ -21,8 +21,6 @@
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
     </FlyoutItem>
 
-
-
     <Shell.FlyoutHeader>
         <Grid>
             <Grid.RowDefinitions>
