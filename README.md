@@ -6,13 +6,19 @@ This is a Xamarin.Forms sample app showcasing the use of Material Design and Col
 
 Visual is a simple API for setting the renderers at any level of your application. In this case, we are using Material Design for iOS and Android to achieve a consistent look and feel.
 
+[Microsoft Ignite Video](https://myignite.techcommunity.microsoft.com/sessions/85034)
+
 ## CollectionView
 
 CollectionView is a new list control that supports multiple layouts, grouping, incremental loading, empty view state, and much more. 
 
+[Microsoft Ignite Video](https://myignite.techcommunity.microsoft.com/sessions/85036)
+
 ## Shell
 
 Shell introduces a simplified way to express the navigation UI of your application using flyout items and tabs. Navigation services are available from anywhere in your application, and URI based routing supports passing query strings to easily share state.
+
+[Microsoft Ignite Video](https://myignite.techcommunity.microsoft.com/sessions/85031)
 
 # Screenshots
 
