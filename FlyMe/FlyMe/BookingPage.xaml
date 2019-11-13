@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Shell.NavBarIsVisible="True"
     Title="Book a Flight"
-    x:Class="FlyMe.MainPage">
+    x:Class="FlyMe.BookingPage">
 
     <Grid>
         <Grid.RowDefinitions>

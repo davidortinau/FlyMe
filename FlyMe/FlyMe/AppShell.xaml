@@ -11,14 +11,14 @@
     </FlyoutItem>
 
     <FlyoutItem Title="Today" Icon="{StaticResource IconTabToday}">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        <ShellContent ContentTemplate="{DataTemplate local:BookingPage}"/>
     </FlyoutItem>
     
     <FlyoutItem Title="Book" Route="book" Icon="{StaticResource IconTabBook}">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        <ShellContent ContentTemplate="{DataTemplate local:BookingPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Notifications" Icon="{StaticResource IconTabNotifications}">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        <ShellContent ContentTemplate="{DataTemplate local:BookingPage}"/>
     </FlyoutItem>
 
     <Shell.FlyoutHeader>

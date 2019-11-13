@@ -10,9 +10,9 @@ namespace FlyMe
 {
     [QueryProperty(nameof(From), "from")]
     [DesignTimeVisible(false)]
-    public partial class MainPage : ContentPage
+    public partial class BookingPage
     {
-        public MainPage()
+        public BookingPage()
         {
             InitializeComponent();
         }
