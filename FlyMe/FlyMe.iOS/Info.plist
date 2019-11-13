@@ -21,15 +21,13 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>8.0</string>
+	<string>11.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>FlyMe</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.companyname.FlyMe</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>FlyMe</string>
 	<key>XSAppIconAssets</key>
@@ -38,5 +36,7 @@
 	<array>
 		<string>fa-solid-900.ttf</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 </dict>
 </plist>

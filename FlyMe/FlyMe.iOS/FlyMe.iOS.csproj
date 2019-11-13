@@ -75,7 +75,6 @@
     <BundleResource Include="Resources\plane.png" />
   </ItemGroup>
   <ItemGroup>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -97,6 +96,7 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_76pt%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_83.5%402x.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon.png" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -22,13 +22,17 @@
     </FlyoutItem>
 
     <Shell.FlyoutHeader>
-        <Grid>
+        <Grid Margin="0"
+              BackgroundColor="#5561F9"
+              >
             <Grid.RowDefinitions>
+                <RowDefinition Height="{OnPlatform iOS=66, Default=0}"/>
                 <RowDefinition Height="120"/>
             </Grid.RowDefinitions>
-            <BoxView BackgroundColor="#5561F9"/>
 
-            <Image VerticalOptions="Center"
+            <Image
+                Grid.RowSpan="2"
+                VerticalOptions="Center"
                 HorizontalOptions="Center">
                 <Image.Source>
                     <FontImageSource
