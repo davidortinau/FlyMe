@@ -14,6 +14,19 @@ namespace FlyMe
 
             Shell.SetSearchHandler(this, new FeedSearchHandler(vm));
         }
+
+        void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)
+        {
+            var handler = Shell.GetSearchHandler(this);
+            if (handler.SearchBoxVisibility == SearchBoxVisibility.Hidden)
+            {
+                handler.SearchBoxVisibility = SearchBoxVisibility.Expanded;
+            }
+            else
+            {
+                handler.SearchBoxVisibility = SearchBoxVisibility.Hidden;
+            }
+        }
     }
 
     public class FeedSearchHandler : SearchHandler
@@ -25,9 +38,10 @@ namespace FlyMe
             IsSearchEnabled = true;
             ShowsResults = false;
             Placeholder = "Find a Flight";
-            CancelButtonColor = Color.DarkBlue;
-            TextColor = Color.DarkBlue;
-
+            PlaceholderColor = Color.White;
+            CancelButtonColor = Color.White;
+            TextColor = Color.White;
+            
             _vm = vm;
         }
 

@@ -62,6 +62,12 @@
                      Glyph="{x:Static local:IconFont.Bell}"
                      Size="{StaticResource SizeTabIcon}"
                      Color="{StaticResource ColorTabIcon}" />
+
+            <FontImageSource x:Key="IconSearch"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.Search}"
+                     Size="18"
+                     Color="White" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

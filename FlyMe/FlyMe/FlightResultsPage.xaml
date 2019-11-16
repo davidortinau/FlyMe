@@ -11,12 +11,18 @@
         <vm:FlightResultsViewModel x:Name="vm" />
     </ContentPage.BindingContext>
 
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="{StaticResource IconSearch}"
+                     Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>-->
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
         <CollectionView
+            x:Name="cv"
             ItemsSource="{Binding FlightsToDisplay}"
             RemainingItemsThreshold="0"
             RemainingItemsThresholdReachedCommand="{Binding LoadMoreFlightsCommand}"

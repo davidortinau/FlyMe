@@ -8,254 +8,245 @@
     BackgroundColor="#D8D8D8"
     x:Class="FlyMe.MyFlightsPage">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition
-                Height="*" />
-            <RowDefinition
-                Height="300" />
-        </Grid.RowDefinitions>
+    <ScrollView>
+        <StackLayout
+            BackgroundColor="#5561F9">
+            <FlexLayout
+                Margin="20"
+                Direction="Row"
+                VerticalOptions="Start"
+                JustifyContent="SpaceBetween"
+                Wrap="Wrap"
+                AlignItems="Start"
+                AlignContent="Start">
 
-        <BoxView
-            Grid.Row="0"
-            BackgroundColor="#5561F9" />
-
-        <FlexLayout
-            Grid.Row="0"
-            Margin="20,20,20,0"
-            Direction="Row"
-            VerticalOptions="Start"
-            JustifyContent="SpaceBetween"
-            Wrap="Wrap"
-            AlignItems="Start"
-            AlignContent="Start">
-
-
-            <Label
-                TextColor="White"
-                Margin="0,0,0,20"
-                FlexLayout.Basis="100%">
-                <Label.FormattedText>
-                    <FormattedString>
-                        <Span
-                            Text="David Ortinau&#x0a;"
-                            FontSize="24" />
-                        <Span
-                            Text="FlyMe Member # 0000000000001"
-                            FontSize="14" />
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
-
-            <Label
-                Text="MILES&#x0a;AVAILABLE"
-                LineBreakMode="WordWrap"
-                FontSize="14"
-                TextColor="White"
-                FlexLayout.Basis="30%"
-                FlexLayout.AlignSelf="End" />
-
-            <Label
-                Text="1,562,098"
-                FontSize="32"
-                TextColor="White"
-                FlexLayout.Basis="70%"
-                HorizontalOptions="End"
-                HorizontalTextAlignment="End"
-                FlexLayout.AlignSelf="End" />
-
-            <Grid
-                FlexLayout.Basis="100%"
-                Margin="0,20">
-                <Grid.RowDefinitions>
-                    <RowDefinition
-                        Height="30" />
-                </Grid.RowDefinitions>
-
-                <BoxView
-                    BackgroundColor="DarkBlue"
-                    CornerRadius="15" />
-
-                <BoxView
-                    BackgroundColor="SteelBlue"
-                    WidthRequest="200"
-                    HorizontalOptions="Start"
-                    CornerRadius="15" />
 
                 <Label
-                    FontSize="12"
-                    Margin="15,0"
-                    VerticalOptions="Center"
-                    TextColor="GhostWhite">
+                    TextColor="White"
+                    Margin="0,0,0,20"
+                    FlexLayout.Basis="100%">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span
-                                Text="{x:Static local:IconFont.PlaneDeparture}"
-                                FontSize="10"
-                                FontFamily="{StaticResource FontAwesome}" />
+                                Text="David Ortinau&#x0a;"
+                                FontSize="24" />
                             <Span
-                                Text=" " />
-                            <Span
-                                Text=" MQMs 11,491 / 25k Miles " />
+                                Text="FlyMe Member # 0000000000001"
+                                FontSize="14" />
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-            </Grid>
-
-            <Grid
-                FlexLayout.Basis="100%"
-                Margin="0,0,0,20">
-                <Grid.RowDefinitions>
-                    <RowDefinition
-                        Height="30" />
-                </Grid.RowDefinitions>
-
-                <BoxView
-                    BackgroundColor="DarkBlue"
-                    CornerRadius="15" />
-
-                <BoxView
-                    BackgroundColor="SteelBlue"
-                    WidthRequest="100"
-                    HorizontalOptions="Start"
-                    CornerRadius="15" />
 
                 <Label
-                    FontSize="12"
-                    Margin="15,0"
-                    VerticalOptions="Center"
-                    TextColor="GhostWhite">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span
-                                Text="{x:Static local:IconFont.PlaneDeparture}"
-                                FontSize="10"
-                                FontFamily="{StaticResource FontAwesome}" />
-                            <Span
-                                Text=" " />
-                            <Span
-                                Text=" MQS: 6 / 30 Segments " />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
-
-            <Label
-                Text="Fill one of each by Dec 31 to reach Gold Monkey Status"
-                FlexLayout.Basis="100%"
-                FontSize="12"
-                HorizontalTextAlignment="Center"
-                TextColor="White" />
-
-            <Grid
-                FlexLayout.Basis="100%"
-                Margin="0,20">
-                <Grid.RowDefinitions>
-                    <RowDefinition
-                        Height="30" />
-                </Grid.RowDefinitions>
-
-                <BoxView
-                    BackgroundColor="DarkBlue"
-                    CornerRadius="15" />
-
-                <BoxView
-                    BackgroundColor="SteelBlue"
-                    WidthRequest="300"
-                    HorizontalOptions="Start"
-                    CornerRadius="15" />
+                    Text="MILES&#x0a;AVAILABLE"
+                    LineBreakMode="WordWrap"
+                    FontSize="14"
+                    TextColor="White"
+                    FlexLayout.Basis="30%"
+                    FlexLayout.AlignSelf="End" />
 
                 <Label
-                    FontSize="12"
-                    Margin="15,0"
-                    VerticalOptions="Center"
-                    TextColor="GhostWhite">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span
-                                Text="{x:Static local:IconFont.DollarSign}"
-                                FontSize="10"
-                                FontFamily="{StaticResource FontAwesome}" />
-                            <Span
-                                Text=" " />
-                            <Span
-                                Text=" MQDs: $4,098 / $5k Dollars " />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
+                    Text="1,562,098"
+                    FontSize="32"
+                    TextColor="White"
+                    FlexLayout.Basis="70%"
+                    HorizontalOptions="End"
+                    HorizontalTextAlignment="End"
+                    FlexLayout.AlignSelf="End" />
 
-            <Grid
-                FlexLayout.Basis="100%"
-                Margin="0,0,0,0">
-                <Grid.RowDefinitions>
-                    <RowDefinition
-                        Height="30" />
-                </Grid.RowDefinitions>
+                <Grid
+                    FlexLayout.Basis="100%"
+                    Margin="0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="30" />
+                    </Grid.RowDefinitions>
 
-                <BoxView
-                    BackgroundColor="DarkBlue"
-                    CornerRadius="15" />
+                    <BoxView
+                        BackgroundColor="DarkBlue"
+                        CornerRadius="15" />
+
+                    <BoxView
+                        BackgroundColor="SteelBlue"
+                        WidthRequest="200"
+                        HorizontalOptions="Start"
+                        CornerRadius="15" />
+
+                    <Label
+                        FontSize="12"
+                        Margin="15,0"
+                        VerticalOptions="Center"
+                        TextColor="GhostWhite">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    Text="{x:Static local:IconFont.PlaneDeparture}"
+                                    FontSize="10"
+                                    FontFamily="{StaticResource FontAwesome}" />
+                                <Span
+                                    Text=" " />
+                                <Span
+                                    Text=" MQMs 11,491 / 25k Miles " />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+
+                <Grid
+                    FlexLayout.Basis="100%"
+                    Margin="0,0,0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="30" />
+                    </Grid.RowDefinitions>
+
+                    <BoxView
+                        BackgroundColor="DarkBlue"
+                        CornerRadius="15" />
+
+                    <BoxView
+                        BackgroundColor="SteelBlue"
+                        WidthRequest="100"
+                        HorizontalOptions="Start"
+                        CornerRadius="15" />
+
+                    <Label
+                        FontSize="12"
+                        Margin="15,0"
+                        VerticalOptions="Center"
+                        TextColor="GhostWhite">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    Text="{x:Static local:IconFont.PlaneDeparture}"
+                                    FontSize="10"
+                                    FontFamily="{StaticResource FontAwesome}" />
+                                <Span
+                                    Text=" " />
+                                <Span
+                                    Text=" MQS: 6 / 30 Segments " />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
 
                 <Label
+                    Text="Fill one of each by Dec 31 to reach Gold Monkey Status"
+                    FlexLayout.Basis="100%"
                     FontSize="12"
-                    Margin="15,0"
-                    VerticalOptions="Center"
-                    TextColor="GhostWhite">
-                    <Label.FormattedText>
-                        <FormattedString>
-                            <Span
-                                Text="{x:Static local:IconFont.DollarSign}"
-                                FontSize="10"
-                                FontFamily="{StaticResource FontAwesome}" />
-                            <Span
-                                Text=" " />
-                            <Span
-                                Text=" Card Spend: $-- " />
-                        </FormattedString>
-                    </Label.FormattedText>
-                </Label>
-            </Grid>
+                    HorizontalTextAlignment="Center"
+                    TextColor="White" />
 
-        </FlexLayout>
+                <Grid
+                    FlexLayout.Basis="100%"
+                    Margin="0,20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="30" />
+                    </Grid.RowDefinitions>
 
-        <FlexLayout
-            Grid.Row="1"
-            Direction="Row"
-            Wrap="Wrap"
-            Margin="15" 
-            AlignContent="Start"
-            AlignItems="Start"
-            JustifyContent="SpaceBetween">
-            <Label
-                Text="Recent Activity"
-                FontSize="Large"
-                TextColor="DarkSlateGray"
-                FlexLayout.AlignSelf="Center" />
-            <Label
-                Text="{x:Static local:IconFont.ChevronRight}"
-                FontFamily="{StaticResource FontAwesome}"
-                FontSize="Medium"
-                TextColor="OrangeRed"
-                FlexLayout.AlignSelf="Center" />
+                    <BoxView
+                        BackgroundColor="DarkBlue"
+                        CornerRadius="15" />
 
-            <BoxView
-                Margin="0,20"
-                HeightRequest="1"
-                BackgroundColor="DimGray"
-                FlexLayout.Basis="100%" />
+                    <BoxView
+                        BackgroundColor="SteelBlue"
+                        WidthRequest="300"
+                        HorizontalOptions="Start"
+                        CornerRadius="15" />
 
-            <Button
-                FlexLayout.Basis="100%"
-                HeightRequest="44"
-                CornerRadius="22"
-                BackgroundColor="OrangeRed"
-                Clicked="Button_Clicked"
-                Text="Book a Flight"/>
-        </FlexLayout>
+                    <Label
+                        FontSize="12"
+                        Margin="15,0"
+                        VerticalOptions="Center"
+                        TextColor="GhostWhite">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    Text="{x:Static local:IconFont.DollarSign}"
+                                    FontSize="10"
+                                    FontFamily="{StaticResource FontAwesome}" />
+                                <Span
+                                    Text=" " />
+                                <Span
+                                    Text=" MQDs: $4,098 / $5k Dollars " />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+
+                <Grid
+                    FlexLayout.Basis="100%"
+                    Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition
+                            Height="30" />
+                    </Grid.RowDefinitions>
+
+                    <BoxView
+                        BackgroundColor="DarkBlue"
+                        CornerRadius="15" />
+
+                    <Label
+                        FontSize="12"
+                        Margin="15,0"
+                        VerticalOptions="Center"
+                        TextColor="GhostWhite">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    Text="{x:Static local:IconFont.DollarSign}"
+                                    FontSize="10"
+                                    FontFamily="{StaticResource FontAwesome}" />
+                                <Span
+                                    Text=" " />
+                                <Span
+                                    Text=" Card Spend: $-- " />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </Grid>
+
+            </FlexLayout>
+
+            <FlexLayout
+                BackgroundColor="#D8D8D8"
+                VerticalOptions="FillAndExpand"
+                Direction="Row"
+                Wrap="Wrap"
+                Padding="15"
+                AlignContent="Start"
+                AlignItems="Start"
+                JustifyContent="SpaceBetween">
+                <Label
+                    Text="Recent Activity"
+                    FontSize="Large"
+                    TextColor="DarkSlateGray"
+                    FlexLayout.AlignSelf="Center" />
+                <Label
+                    Text="{x:Static local:IconFont.ChevronRight}"
+                    FontFamily="{StaticResource FontAwesome}"
+                    FontSize="Medium"
+                    TextColor="OrangeRed"
+                    FlexLayout.AlignSelf="Center" />
+
+                <BoxView
+                    Margin="0,20"
+                    HeightRequest="1"
+                    BackgroundColor="DimGray"
+                    FlexLayout.Basis="100%" />
+
+                <Button
+                    FlexLayout.Basis="100%"
+                    HeightRequest="44"
+                    CornerRadius="22"
+                    BackgroundColor="OrangeRed"
+                    Clicked="Button_Clicked"
+                    Text="Book a Flight" />
+            </FlexLayout>
 
 
 
-    </Grid>
-
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
