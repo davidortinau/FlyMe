@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 
-namespace FlyMe
+namespace FlyMe.Views
 {
-    public partial class FlightResultsPage : ContentPage
+    public partial class FlightResultsPage
     {
         public FlightResultsPage()
         {

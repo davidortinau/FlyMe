@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿
 using Xamarin.Forms;
 
-namespace FlyMe
+namespace FlyMe.Views
 {
-    public partial class MyFlightsPage : ContentPage
+    public partial class MyFlightsPage
     {
         public MyFlightsPage()
         {

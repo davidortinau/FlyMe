@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FlyMe
+namespace FlyMe.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ResultViewA : ContentView
+    public partial class TodayPage : ContentPage
     {
-        public ResultViewA()
+        public TodayPage()
         {
             InitializeComponent();
         }

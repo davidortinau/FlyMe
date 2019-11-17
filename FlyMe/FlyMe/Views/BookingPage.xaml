@@ -4,11 +4,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:model="clr-namespace:FlyMe.Models"
     xmlns:local="clr-namespace:FlyMe"
     mc:Ignorable="d"
     Shell.NavBarIsVisible="True"
     Title="Book a Flight"
-    x:Class="FlyMe.BookingPage">
+    x:Class="FlyMe.Views.BookingPage">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -30,11 +31,11 @@
                                    ItemSpacing="10"/>
             </CollectionView.ItemsLayout>
             <CollectionView.ItemsSource>
-                <x:Array Type="{x:Type local:FlightType}">
-                    <local:FlightType Icon="{x:Static local:IconFont.PaperPlane}" Title="One Way"/>
-                    <local:FlightType Icon="{x:Static local:IconFont.DotCircle}" Title="Round Trip"/>
-                    <local:FlightType Icon="{x:Static local:IconFont.City}" Title="Multi-City"/>
-                    <local:FlightType Icon="{x:Static local:IconFont.MapMarked}" Title="Tourism"/>
+                <x:Array Type="{x:Type model:FlightType}">
+                    <model:FlightType Icon="{x:Static local:IconFont.PaperPlane}" Title="One Way"/>
+                    <model:FlightType Icon="{x:Static local:IconFont.DotCircle}" Title="Round Trip"/>
+                    <model:FlightType Icon="{x:Static local:IconFont.City}" Title="Multi-City"/>
+                    <model:FlightType Icon="{x:Static local:IconFont.MapMarked}" Title="Tourism"/>
                 </x:Array>
             </CollectionView.ItemsSource>
             <CollectionView.ItemTemplate>

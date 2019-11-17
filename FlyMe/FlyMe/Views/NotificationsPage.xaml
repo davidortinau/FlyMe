@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:FlyMe"
+             xmlns:model="clr-namespace:FlyMe.Models"
+             mc:Ignorable="d"
+             BackgroundColor="#D8D8D8"
+             Title="Notifications"
+             x:Class="FlyMe.Views.NotificationsPage">
+    <CollectionView>
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout
+                Orientation="Vertical"
+                ItemSpacing="0"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.EmptyView>
+            <FlexLayout Direction="Column" JustifyContent="Center">
+                <Image Margin="0,0,0,10">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="{StaticResource FontAwesome}"
+                            Glyph="{x:Static local:IconFont.BellSlash}"
+                            Color="{StaticResource PrimaryColor}"
+                            Size="64"
+                            />
+                    </Image.Source>
+                </Image>
+                <Label Text="No alerts" 
+                       Style="{StaticResource EmptyLabel}"
+                       HorizontalTextAlignment="Center"/>
+               
+            </FlexLayout>
+        </CollectionView.EmptyView>
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.RowSpan="3" VerticalOptions="Center">
+                        <Image.Source>
+                            <FontImageSource
+                            FontFamily="{StaticResource FontAwesome}"
+                            Glyph="{Binding Type}"
+                            Color="{StaticResource PrimaryColor}"
+                            Size="24"
+                            />
+                        </Image.Source>
+                    </Image>
+
+                    <StackLayout
+                        Grid.Row="1" 
+                           Grid.Column="1">
+                    <Label  
+                           Text="{Binding Title}" 
+                           LineBreakMode="TailTruncation"/>
+                    <Label Text="{Binding Message}"
+                           LineBreakMode="WordWrap"
+                           MaxLines="2"/>
+                    <Label Text="{Binding PostedAgo}"/>
+                    </StackLayout>
+                    <BoxView HeightRequest="1"
+                             BackgroundColor="Black"
+                             Grid.ColumnSpan="2"
+                             Grid.Row="2"
+                             VerticalOptions="End"/>
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type model:Notification}">
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+                <model:Notification 
+                    Type="{x:Static local:IconFont.PaperPlane}" 
+                    Title="WN 5171 Departing STL"
+                    Message="WN5171 ON TIME. STL dep 6:00pm term 2, gate E24. SEA arr 8:30pm."
+                    PostedAgo="27 days ago"
+                    />
+
+
+            </x:Array>
+        </CollectionView.ItemsSource>
+    </CollectionView>
+</ContentPage>

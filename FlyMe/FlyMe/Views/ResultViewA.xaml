@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:FlyMe"
              mc:Ignorable="d"
-             x:Class="FlyMe.ResultViewA">
+             x:Class="FlyMe.Views.ResultViewA">
     <Frame
                         Margin="8"
                         CornerRadius="0"

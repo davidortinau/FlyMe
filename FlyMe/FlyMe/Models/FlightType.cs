@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FlyMe
+namespace FlyMe.Models
 {
     public class FlightType
     {
