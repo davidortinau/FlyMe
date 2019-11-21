@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace FlyMe.ViewModels
@@ -27,10 +28,8 @@ namespace FlyMe.ViewModels
         int batchSize = 20;
         int currentFlightIndex = 0;
 
-        void LoadMore()
+        async void LoadMore()
         {
-<<<<<<< Updated upstream
-=======
             if (IsBusy)
                 return;
 
@@ -38,18 +37,15 @@ namespace FlyMe.ViewModels
 
             await Task.Delay(1000);// fake delay to see the activity
 
->>>>>>> Stashed changes
             FlightsToDisplay.AddRange(
                 Flights.Skip(batchSize * currentFlightIndex).Take(batchSize)
             );
             currentFlightIndex += batchSize;
-<<<<<<< Updated upstream
-=======
+
 
             IsBusy = false;
 
             Debug.WriteLine($"You now have: {FlightsToDisplay.Count}");
->>>>>>> Stashed changes
         }
 
         public ObservableRangeCollection<Flight> FlightsToDisplay
