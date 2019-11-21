@@ -3,8 +3,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FlyMe"
+    xmlns:xa="clr-namespace:Xamanimation;assembly=Xamanimation"
     Title=""
     Shell.NavBarIsVisible="True"
+    Shell.NavBarHasShadow="False"
     BackgroundColor="#D8D8D8"
     x:Class="FlyMe.Views.MyFlightsPage">
 
@@ -19,7 +21,7 @@
                 Wrap="Wrap"
                 AlignItems="Start"
                 AlignContent="Start">
-
+                
 
                 <Label
                     TextColor="White"
@@ -67,10 +69,11 @@
                         CornerRadius="15" />
 
                     <BoxView
+                        x:Name="MilesProgressBar"
                         BackgroundColor="SteelBlue"
-                        WidthRequest="200"
+                        WidthRequest="0"
                         HorizontalOptions="Start"
-                        CornerRadius="15" />
+                        CornerRadius="15"/>
 
                     <Label
                         FontSize="12"
@@ -105,8 +108,9 @@
                         CornerRadius="15" />
 
                     <BoxView
+                        x:Name="SegmentsProgressBar"
                         BackgroundColor="SteelBlue"
-                        WidthRequest="100"
+                        WidthRequest="0"
                         HorizontalOptions="Start"
                         CornerRadius="15" />
 
