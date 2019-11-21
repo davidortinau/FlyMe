@@ -8,8 +8,9 @@
              x:Class="FlyMe.Views.ResultViewB">
     <Frame
         Padding="0"
-                        CornerRadius="0"
-                        HasShadow="False">
+        CornerRadius="0"
+        HorizontalOptions="Fill"
+        HasShadow="False">
         <Grid>
 
             <Grid.RowDefinitions>
@@ -92,7 +93,8 @@
                                     HeightRequest="1"
                                     BackgroundColor="#D8D8D8" />
                 <Label
-                                    Text="Non-stop"
+                                    Text="{Binding Stops}"
+                                    TextType="Html"
                                     FontSize="12"
                                     FontAttributes="Bold" />
             </StackLayout>

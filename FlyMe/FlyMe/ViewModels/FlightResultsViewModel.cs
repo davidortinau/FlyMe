@@ -1,6 +1,7 @@
 ﻿using MvvmHelpers;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Xamarin.Forms;
 
@@ -23,15 +24,32 @@ namespace FlyMe.ViewModels
             Shell.Current.DisplayAlert("Maybe Next Demo", $"So, you wanna go from {obj.From} to {obj.To}, eh?", "G'bye");
         }
 
-        int batchSize = 10;
+        int batchSize = 20;
         int currentFlightIndex = 0;
 
         void LoadMore()
         {
+<<<<<<< Updated upstream
+=======
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            await Task.Delay(1000);// fake delay to see the activity
+
+>>>>>>> Stashed changes
             FlightsToDisplay.AddRange(
                 Flights.Skip(batchSize * currentFlightIndex).Take(batchSize)
             );
             currentFlightIndex += batchSize;
+<<<<<<< Updated upstream
+=======
+
+            IsBusy = false;
+
+            Debug.WriteLine($"You now have: {FlightsToDisplay.Count}");
+>>>>>>> Stashed changes
         }
 
         public ObservableRangeCollection<Flight> FlightsToDisplay
@@ -105,6 +123,21 @@ namespace FlyMe.ViewModels
         public string To { get; set; }
         public DateTime DepartDateTime { get; set; }
         public DateTime ArrivalDateTime { get; set; }
+
+        public string Stops
+        {
+            get
+            {
+                if(To == "STL")
+                {
+                    return "2 stops:<br/>MDW<br/>CCT<br/>Direct upgrade available";
+                }
+                else
+                {
+                    return "Non-stop";
+                }
+            }
+        }
         public string Duration
         {
             get
