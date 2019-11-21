@@ -8,6 +8,7 @@
     xmlns:local="clr-namespace:FlyMe"
     mc:Ignorable="d"
     Shell.NavBarIsVisible="True"
+    Shell.NavBarHasShadow="False"
     Title="Book a Flight"
     x:Class="FlyMe.Views.BookingPage">
 
@@ -36,6 +37,10 @@
                     <model:FlightType Icon="{x:Static local:IconFont.DotCircle}" Title="Round Trip"/>
                     <model:FlightType Icon="{x:Static local:IconFont.City}" Title="Multi-City"/>
                     <model:FlightType Icon="{x:Static local:IconFont.MapMarked}" Title="Tourism"/>
+                    <model:FlightType Icon="{x:Static local:IconFont.Tree}" Title="Second Honeymoon"/>
+                    <model:FlightType Icon="{x:Static local:IconFont.EuroSign}" Title="Europe"/>
+                    <model:FlightType Icon="{x:Static local:IconFont.YenSign}" Title="Asia"/>
+                    <model:FlightType Icon="{x:Static local:IconFont.GlobeAfrica}" Title="Africa"/>
                 </x:Array>
             </CollectionView.ItemsSource>
             <CollectionView.ItemTemplate>

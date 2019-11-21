@@ -5,16 +5,12 @@
     xmlns:vm="clr-namespace:FlyMe.ViewModels"
     xmlns:views="clr-namespace:FlyMe.Views"
     BackgroundColor="#D8D8D8"
+    Shell.NavBarHasShadow="False"
     x:Class="FlyMe.Views.FlightResultsPage">
 
     <ContentPage.BindingContext>
         <vm:FlightResultsViewModel x:Name="vm" />
     </ContentPage.BindingContext>
-
-    <!--<ContentPage.ToolbarItems>
-        <ToolbarItem IconImageSource="{StaticResource IconSearch}"
-                     Clicked="ToolbarItem_Clicked"/>
-    </ContentPage.ToolbarItems>-->
 
     <Grid>
         <Grid.RowDefinitions>
@@ -62,6 +58,14 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+
+        <ActivityIndicator Color="{StaticResource PrimaryColor}" 
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="Center"
+                           VerticalOptions="End"
+                           Margin="0,0,0,20"
+                           />
+        
     </Grid>
 
 </ContentPage>
