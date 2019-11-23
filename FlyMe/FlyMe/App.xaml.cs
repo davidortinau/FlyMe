@@ -6,6 +6,8 @@ namespace FlyMe
 {
     public partial class App : Application
     {
+        public static string REMEMBER_ME = "remember_me";
+
         public App()
         {
             InitializeComponent();
