@@ -12,6 +12,8 @@ namespace FlyMe
         {
             InitializeComponent();
 
+            Device.SetFlags(new[] { "CarouselView_Experimental", "IndicatorView_Experimental" } );
+
             MainPage = new AppShell();
         }
 

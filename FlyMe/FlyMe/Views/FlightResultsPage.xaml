@@ -5,7 +5,6 @@
     xmlns:vm="clr-namespace:FlyMe.ViewModels"
     xmlns:views="clr-namespace:FlyMe.Views"
     BackgroundColor="#D8D8D8"
-    Shell.NavBarHasShadow="False"
     x:Class="FlyMe.Views.FlightResultsPage">
 
     <ContentPage.BindingContext>

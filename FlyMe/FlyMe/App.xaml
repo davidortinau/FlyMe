@@ -78,6 +78,16 @@
                     <Setter Property="TextColor" Value="Black"/>
                     <Setter Property="Margin" Value="0,8"/>
                 </Style>
+
+            <x:Array x:Key="Banners" Type="{x:Type x:String}">
+                <x:String>banner_01.jpg</x:String>
+                <x:String>banner_02.jpg</x:String>
+                <x:String>banner_03.jpg</x:String>
+                <x:String>banner_04.jpg</x:String>
+                <x:String>banner_05.jpg</x:String>
+                <x:String>banner_06.jpg</x:String>
+            </x:Array>
+            
             </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -6,13 +6,37 @@
     xmlns:xa="clr-namespace:Xamanimation;assembly=Xamanimation"
     Title=""
     Shell.NavBarIsVisible="True"
-    Shell.NavBarHasShadow="False"
     BackgroundColor="#D8D8D8"
     x:Class="FlyMe.Views.MyFlightsPage">
 
-    <ScrollView>
-        <StackLayout
-            BackgroundColor="#5561F9">
+    <Grid BackgroundColor="#5561F9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <CarouselView 
+            PeekAreaInsets="40"
+            ItemsSource="{StaticResource Banners}" 
+            Position="3">
+            <CarouselView.ItemsLayout>
+                <LinearItemsLayout Orientation="Horizontal"
+                                   SnapPointsAlignment="Center"
+                                   SnapPointsType="MandatorySingle"
+                                   ItemSpacing="8"/>
+            </CarouselView.ItemsLayout>
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+        <ScrollView Grid.Row="1">
+        <StackLayout>
+
+            
+            
             <FlexLayout
                 Margin="20"
                 Direction="Row"
@@ -253,4 +277,5 @@
 
         </StackLayout>
     </ScrollView>
+    </Grid>
 </ContentPage>

@@ -8,7 +8,6 @@
     xmlns:local="clr-namespace:FlyMe"
     mc:Ignorable="d"
     Shell.NavBarIsVisible="True"
-    Shell.NavBarHasShadow="False"
     Title="Book a Flight"
     x:Class="FlyMe.Views.BookingPage">
 
