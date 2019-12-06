@@ -143,13 +143,13 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.5.0.15-nightly" />
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991220-pre3" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Xamarin.Forms.StateSquid">
       <Version>1.1.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.5.0.15-nightly</Version>
+      <Version>4.4.0.991220-pre3</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -158,5 +158,23 @@
       <Project>{3ED26151-0828-4F80-8B66-74869817A097}</Project>
       <Name>FlyMe</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banner_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banner_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banner_03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banner_04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banner_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banner_06.jpg" />
   </ItemGroup>
 </Project>

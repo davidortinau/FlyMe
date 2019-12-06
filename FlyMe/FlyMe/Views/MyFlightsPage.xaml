@@ -6,10 +6,9 @@
     xmlns:xa="clr-namespace:Xamanimation;assembly=Xamanimation"
     Title=""
     Shell.NavBarIsVisible="True"
-    BackgroundColor="#D8D8D8"
     x:Class="FlyMe.Views.MyFlightsPage">
 
-    <Grid BackgroundColor="#5561F9">
+    <Grid class="bgColor">
         <Grid.RowDefinitions>
             <RowDefinition Height="230"/>
             <RowDefinition Height="*"/>

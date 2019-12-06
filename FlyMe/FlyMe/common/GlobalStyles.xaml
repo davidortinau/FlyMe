@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:local="clr-namespace:FlyMe"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Fonts -->
+    <OnPlatform x:Key="FontAwesome"
+                x:TypeArguments="x:String">
+        <On Platform="Android" Value="fa-solid-900.ttf#Font Awesome 5 Free"/>
+        <On Platform="iOS" Value="Font Awesome 5 Free"/>
+        <On Platform="UWP" Value="Assets/Fonts/fa-solid-900.ttf#Font Awesome 5 Free"/>
+    </OnPlatform>
+
+    <!-- Colors -->
+    <Color x:Key="PrimaryColor">#5561F9</Color>
+    <Color x:Key="ColorTabIcon">Gray</Color>
+    
+    <!-- Sizes -->
+    <x:Double x:Key="SizeTabIcon">24</x:Double>
+
+    <!-- Icons -->
+    <FontImageSource x:Key="IconTabBook"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.TicketAlt}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabMyFlights"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.PersonBooth}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabToday"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.CalendarDay}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabNotifications"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.Bell}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconSearch"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.Search}"
+                     Size="18"
+                     Color="White" />
+
+    <!-- Control Styles -->
+    <Style x:Key="EmptyLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="Margin" Value="0,8"/>
+    </Style>
+    
+    <!-- Shell -->
+    <Style x:Key="BaseStyle"
+                   TargetType="Element">
+        <Setter Property="Shell.BackgroundColor"
+                        Value="{StaticResource PrimaryColor}" />
+        <Setter Property="Shell.ForegroundColor"
+                        Value="#FFFFFF" />
+        <Setter Property="Shell.TitleColor"
+                        Value="White" />
+        <Setter Property="Shell.DisabledColor"
+                        Value="#B4FFFFFF" />
+        <Setter Property="Shell.UnselectedColor"
+                        Value="#33FFFFFF" />
+    </Style>
+
+    <Style BasedOn="{StaticResource BaseStyle}"
+                   ApplyToDerivedTypes="True"
+                   TargetType="FlyoutItem" />
+
+    <Style BasedOn="{StaticResource BaseStyle}"
+                   ApplyToDerivedTypes="True"
+                   TargetType="TabBar" />
+</ResourceDictionary>

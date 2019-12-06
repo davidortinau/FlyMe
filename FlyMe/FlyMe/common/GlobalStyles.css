@@ -1,0 +1,12 @@
+﻿^ContentPage {
+    -shell-NavBarHasShadow: false;
+    background-color: red;
+}
+
+^Shell {
+    NavBarHasShadow: false;
+}
+
+.bgColor {
+    background-color: #5561F9;
+}
