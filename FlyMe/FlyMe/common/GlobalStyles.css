@@ -1,10 +1,13 @@
 ﻿^ContentPage {
-    -shell-NavBarHasShadow: false;
-    background-color: red;
+    background-color: white;
 }
 
 ^Shell {
-    NavBarHasShadow: false;
+    -xf-shell-background: #5561F9;
+    -xf-shell-foreground: white;
+    -xf-shell-title: white;
+    -xf-shell-disabled: #B4FFFFFF;
+    -xf-shell-unselected: #33FFFFFF;
 }
 
 .bgColor {
