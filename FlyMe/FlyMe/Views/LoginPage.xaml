@@ -19,6 +19,7 @@
             ^Button {
                 height: 66;
                 font-size: 18;
+                -xf-horizontal-options: Fill;  
             }
             
             ]]>

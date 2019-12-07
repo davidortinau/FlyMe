@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FlyMe.common;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,6 +11,9 @@ namespace FlyMe
 
         public App()
         {
+            StyleSheetRegistrar.RegisterStyle("-xf-horizontal-options", typeof(VisualElement), nameof(View.HorizontalOptionsProperty));
+            StyleSheetRegistrar.RegisterStyle("-xf-shell-navbarhasshadow", typeof(Shell), nameof(Shell.NavBarHasShadowProperty));
+
             InitializeComponent();
 
             Device.SetFlags(new[] { "CarouselView_Experimental", "IndicatorView_Experimental" } );

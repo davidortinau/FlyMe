@@ -28,8 +28,7 @@
                     </Image.Source>
                 </Image>
                 <Label Text="No alerts" 
-                       Style="{StaticResource EmptyLabel}"
-                       HorizontalTextAlignment="Center"/>
+                       class="emptyLabel"/>
                
             </FlexLayout>
         </CollectionView.EmptyView>
