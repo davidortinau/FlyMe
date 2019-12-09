@@ -34,6 +34,15 @@
         }"
               />
 
+    <TabBar Route="flight_details">
+        <Tab Title="Info">
+            <ShellContent ContentTemplate="{DataTemplate views:FlightInfoPage}"/>
+        </Tab>
+        <Tab Title="Help">
+            <ShellContent ContentTemplate="{DataTemplate views:FlightHelpPage}"/>
+        </Tab>
+    </TabBar>
+
     <Shell.FlyoutHeader>
         <Grid Margin="0"
               BackgroundColor="#5561F9"

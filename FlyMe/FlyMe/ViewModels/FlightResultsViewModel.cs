@@ -22,7 +22,8 @@ namespace FlyMe.ViewModels
 
         private void GoToDetails(Flight obj)
         {
-            Shell.Current.DisplayAlert("Maybe Next Demo", $"So, you wanna go from {obj.From} to {obj.To}, eh?", "G'bye");
+            //Shell.Current.DisplayAlert("Maybe Next Demo", $"So, you wanna go from {obj.From} to {obj.To}, eh?", "G'bye");
+            Shell.Current.GoToAsync($"///flight_details?from={obj.From}&to={obj.To}");
         }
 
         int batchSize = 20;
