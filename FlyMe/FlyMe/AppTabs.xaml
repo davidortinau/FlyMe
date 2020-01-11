@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:customViews="clr-namespace:Sharpnado.Presentation.Forms.CustomViews;assembly=Sharpnado.Presentation.Forms"
+    xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
+    xmlns:views="clr-namespace:FlyMe.Views"
+    xmlns:vm="clr-namespace:FlyMe.ViewModels"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="False"
+    BackgroundColor="{StaticResource PrimaryColor}"
+    x:Class="FlyMe.AppTabs">
+
+    <ContentPage.BindingContext>
+        <vm:AppTabsViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style
+                x:Key="BottomTabStyle"
+                TargetType="tabs:BottomTabItem">
+                <Setter
+                    Property="SelectedTabColor"
+                    Value="DarkOrange" />
+                <Setter
+                    Property="UnselectedLabelColor"
+                    Value="White" />
+                <Setter
+                    Property="UnselectedIconColor"
+                    Value="White" />
+                <Setter
+                    Property="LabelSize"
+                    Value="14" />
+                <Setter
+                    Property="IconSize"
+                    Value="28" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid
+        ColumnSpacing="0"
+        RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="{StaticResource ToolbarHeight}" />
+            <RowDefinition
+                Height="*" />
+            <RowDefinition
+                x:Name="BottomBarRowDefinition"
+                Height="{StaticResource BottomBarHeight}" />
+        </Grid.RowDefinitions>
+
+
+
+        <tabs:ViewSwitcher
+            x:Name="Switcher"
+            Grid.Row="1"
+            Animate="False"
+            SelectedIndex="{Binding SelectedViewModelIndex, Mode=TwoWay}">
+            
+            <customViews:LazyView
+                x:TypeArguments="views:MyFlightsPage"/>
+            <customViews:LazyView
+                x:TypeArguments="views:TodayPage" />
+            <customViews:LazyView
+                x:TypeArguments="views:FlightResultsPage" />
+            <customViews:LazyView
+                x:TypeArguments="views:NotificationsPage" />
+        </tabs:ViewSwitcher>
+
+        <tabs:TabHostView
+            x:Name="TabHost"
+            Grid.Row="2"
+            BackgroundColor="{StaticResource PrimaryColor}"
+            SelectedIndex="{Binding Source={x:Reference Switcher}, Path=SelectedIndex, Mode=TwoWay}"
+            ShadowType="Top">
+            <tabs:TabHostView.Tabs>
+                <tabs:BottomTabItem
+                    Style="{StaticResource BottomTabStyle}"
+                    Label="My Flights">
+                    <tabs:BottomTabItem.Content>
+                        <Image
+                            Source="{StaticResource IconTabMyFlights}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit" />
+                    </tabs:BottomTabItem.Content>
+
+                </tabs:BottomTabItem>
+                <tabs:BottomTabItem
+                    Style="{StaticResource BottomTabStyle}"
+                    Label="Today">
+                    <tabs:BottomTabItem.Content>
+                        <Image
+                            Source="{StaticResource IconTabToday}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit" />
+                    </tabs:BottomTabItem.Content>
+                </tabs:BottomTabItem>
+                <tabs:TabButton
+                    TranslationY="-30">
+                    <tabs:TabButton.Content>
+                        <Frame
+                            CornerRadius="33"
+                            HeightRequest="66"
+                            WidthRequest="66"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BackgroundColor="#FF3300"
+                            Padding="0">
+
+
+                            <ImageButton
+                                BackgroundColor="Transparent"
+                                Command="{Binding BookCommand}"
+                                Aspect="AspectFit"
+                                HeightRequest="{StaticResource SizeTabIcon}"
+                                WidthRequest="{StaticResource SizeTabIcon}"
+                                Source="{StaticResource IconTabBook}"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center" />
+                        </Frame>
+                    </tabs:TabButton.Content>
+                </tabs:TabButton>
+                <tabs:BottomTabItem
+                    Style="{StaticResource BottomTabStyle}"
+                    Label="Search">
+                    <tabs:BottomTabItem.Content>
+                        <Image
+                            Source="{StaticResource IconSearch}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit" />
+                    </tabs:BottomTabItem.Content>
+                </tabs:BottomTabItem>
+                <tabs:BottomTabItem
+                    Style="{StaticResource BottomTabStyle}"
+                    Label="Notifications">
+                    <tabs:BottomTabItem.Content>
+                        <Image
+                            Source="{StaticResource IconTabNotifications}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Aspect="AspectFit" />
+                    </tabs:BottomTabItem.Content>
+                </tabs:BottomTabItem>
+            </tabs:TabHostView.Tabs>
+        </tabs:TabHostView>
+
+    </Grid>
+</ContentPage>

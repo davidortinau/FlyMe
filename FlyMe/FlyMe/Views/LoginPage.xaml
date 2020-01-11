@@ -12,11 +12,11 @@
         <StyleSheet>
             <![CDATA[
             
-            ^Entry {
+            Entry {
                 background-color: white;
             }
             
-            ^Button {
+            Button {
                 height: 66;
                 font-size: 18;
                 -xf-horizontal-options: Fill;  

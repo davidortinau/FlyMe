@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace FlyMe.Views
+namespace FlyMe
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TodayPage
+    public partial class AppTabs : ContentPage
     {
-        public TodayPage()
+        public AppTabs()
         {
             InitializeComponent();
         }

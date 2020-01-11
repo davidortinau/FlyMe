@@ -18,7 +18,7 @@ namespace FlyMe
 
             Device.SetFlags(new[] { "CarouselView_Experimental", "IndicatorView_Experimental" } );
 
-            MainPage = new AppShell();
+            MainPage = new AppTabs();
         }
 
         protected override void OnStart()

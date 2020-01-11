@@ -24,6 +24,7 @@ namespace FlyMe.iOS
         {
             Xamarin.Forms.FormsMaterial.Init();
             global::Xamarin.Forms.Forms.Init();
+            Sharpnado.Presentation.Forms.iOS.SharpnadoInitializer.Initialize();
             LoadApplication(new App());
 
             UINavigationBar.Appearance.Translucent = false;
