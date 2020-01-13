@@ -6,9 +6,8 @@
     xmlns:tabs="clr-namespace:Sharpnado.Presentation.Forms.CustomViews.Tabs;assembly=Sharpnado.Presentation.Forms"
     xmlns:views="clr-namespace:FlyMe.Views"
     xmlns:vm="clr-namespace:FlyMe.ViewModels"
-    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    ios:Page.UseSafeArea="False"
     BackgroundColor="{StaticResource PrimaryColor}"
+    NavigationPage.HasNavigationBar="False"
     x:Class="FlyMe.AppTabs">
 
     <ContentPage.BindingContext>

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -29,7 +25,7 @@ namespace FlyMe.Views
             var remember = await SecureStorage.GetAsync(App.REMEMBER_ME);
             if (Convert.ToBoolean(remember))
             {
-                await Shell.Current.GoToAsync("///home");
+                MessagingCenter.Instance.Send<LoginPage>(this, App.MSG_LOGGED_IN);  
             }
         }
 
@@ -37,12 +33,10 @@ namespace FlyMe.Views
         {
             if(RememberCheck.IsChecked)
             {
-                // store in essentials
-                SecureStorage.SetAsync(App.REMEMBER_ME, RememberCheck.IsChecked.ToString());
+                await SecureStorage.SetAsync(App.REMEMBER_ME, RememberCheck.IsChecked.ToString());
             }
 
-            await Shell.Current.GoToAsync("///home");
-            Shell.SetFlyoutBehavior(Shell.Current, FlyoutBehavior.Flyout);
+            MessagingCenter.Instance.Send<LoginPage>(this, App.MSG_LOGGED_IN);
         }
     }
 }

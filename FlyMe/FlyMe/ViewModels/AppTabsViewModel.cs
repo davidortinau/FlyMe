@@ -1,4 +1,5 @@
 ﻿using System;
+using FlyMe.Views;
 using Sharpnado.Presentation.Forms.Helpers;
 using Sharpnado.Presentation.Forms.ViewModels;
 using Xamarin.Forms;
@@ -14,7 +15,7 @@ namespace FlyMe.ViewModels
 
         private void OnBooking()
         {
-            // maybe navigate somewhere
+            MessagingCenter.Instance.Send<Application>(App.Current, App.MSG_BOOK);
         }
 
         private int _selectedViewModelIndex;
