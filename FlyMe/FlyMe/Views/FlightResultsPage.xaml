@@ -23,21 +23,7 @@
             RemainingItemsThresholdReachedCommand="{Binding LoadMoreFlightsCommand}"
             VerticalScrollBarVisibility="Always"
             Margin="15">
-            <CollectionView.EmptyView>
-                <StackLayout>
-                    <Label Text="No results matched your search."
-                       Margin="10,25,10,10"
-                       FontAttributes="Bold"
-                       FontSize="18"
-                       HorizontalOptions="Fill"
-                       HorizontalTextAlignment="Center" />
-                    <Label Text="Go Fish!"
-                       FontAttributes="Italic"
-                       FontSize="12"
-                       HorizontalOptions="Fill"
-                       HorizontalTextAlignment="Center" />
-                </StackLayout>
-            </CollectionView.EmptyView>
+            
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout
                     ItemSpacing="20"
@@ -64,6 +50,7 @@
                            HorizontalOptions="Center"
                            VerticalOptions="End"
                            Margin="0,0,0,20"
+                           InputTransparent="True"
                            />
         
     </Grid>

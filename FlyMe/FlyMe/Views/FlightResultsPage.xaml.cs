@@ -12,7 +12,7 @@ namespace FlyMe.Views
         {
             InitializeComponent();
 
-            Shell.SetSearchHandler(this, new FeedSearchHandler(vm));
+            //Shell.SetSearchHandler(this, new FeedSearchHandler(vm));
         }
 
         void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)

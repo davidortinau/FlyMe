@@ -94,7 +94,7 @@
                                     BackgroundColor="#D8D8D8" />
                 <Label
                                     Text="{Binding Stops}"
-                                    TextType="Html"
+                                    TextType="Html" 
                                     FontSize="12"
                                     FontAttributes="Bold" />
             </StackLayout>
