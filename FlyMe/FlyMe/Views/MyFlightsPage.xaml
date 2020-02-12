@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
 
         <CarouselView
-            PeekAreaInsets="40"
+            PeekAreaInsets="40" IsBounceEnabled="True"
             ItemsSource="{StaticResource Banners}"
             Position="3">
             <CarouselView.ItemsLayout>
