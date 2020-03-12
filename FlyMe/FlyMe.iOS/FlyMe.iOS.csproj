@@ -52,6 +52,7 @@
     <MtouchLink>None</MtouchLink>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <MtouchExtraArgs>--interpreter</MtouchExtraArgs>
+    <MtouchInterpreter>-all</MtouchInterpreter>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
