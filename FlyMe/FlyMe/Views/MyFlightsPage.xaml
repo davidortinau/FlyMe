@@ -18,33 +18,37 @@
                 Height="*" />
         </Grid.RowDefinitions>
 
-        <CarouselView
-            PeekAreaInsets="40" IsBounceEnabled="True"
-            ItemsSource="{StaticResource Banners}"
-            Position="3">
-            <CarouselView.ItemsLayout>
-                <LinearItemsLayout
-                    Orientation="Horizontal"
-                    SnapPointsAlignment="Center"
-                    SnapPointsType="MandatorySingle"
-                    ItemSpacing="8" />
-            </CarouselView.ItemsLayout>
-            <CarouselView.ItemTemplate>
-                <DataTemplate>
-                    <Image
-                        Source="{Binding .}" />
-                </DataTemplate>
-            </CarouselView.ItemTemplate>
-        </CarouselView>
+        
 
         <ScrollView
-            Grid.Row="1">
+            Grid.Row="0" Grid.RowSpan="2">
             <StackLayout>
+                <CarouselView
+                    Margin="0,-20,0,0"
+                    HeightRequest="230"
+                    PeekAreaInsets="40" 
+                    IsBounceEnabled="True"
+                    ItemsSource="{StaticResource Banners}" 
+                    Position="3">   
+                    <CarouselView.ItemsLayout>
+                        <LinearItemsLayout
+                        Orientation="Horizontal"
+                        SnapPointsAlignment="Center"
+                        SnapPointsType="MandatorySingle"
+                        ItemSpacing="8" />  
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image
+                        Source="{Binding .}" />
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
 
 
 
                 <FlexLayout
-                    Margin="20"
+                    Margin="20,0,20,20"
                     Direction="Row"
                     VerticalOptions="Start"
                     JustifyContent="SpaceBetween"

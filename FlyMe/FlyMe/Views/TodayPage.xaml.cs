@@ -16,5 +16,11 @@ namespace FlyMe.Views
         {
             InitializeComponent();
         }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            // GoTo Destinations
+            await Shell.Current.GoToAsync("book?from=STL");
+        }
     }
 }

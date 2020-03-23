@@ -2,16 +2,37 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace FlyMe.ViewModels
 {
+    [QueryProperty(nameof(FromDateIn), "start")]
     public class FlightResultsViewModel : BaseViewModel
     {
         public Command LoadMoreFlightsCommand { get; set; }
         public Command GoToDetailsCommand { get; set; }
+
+        public string FromDateIn
+        {
+            set
+            {
+                FromDate = DateTime.ParseExact(value, "yyyyMMddHHmmss", 
+                              CultureInfo.InvariantCulture,
+                              DateTimeStyles.AdjustToUniversal);
+            }
+        }
+        public DateTime FromDate { get; set; }
+
+        public string DisplayDate
+        {
+            get
+            {
+                return $"Free Starting: {FromDate.ToShortDateString()}";
+            }
+        }
         public FlightResultsViewModel()
         {
             LoadMoreFlightsCommand = new Command(LoadMore);
@@ -22,7 +43,7 @@ namespace FlyMe.ViewModels
 
         private void GoToDetails(Flight obj)
         {
-            Shell.Current.DisplayAlert("Maybe Next Demo", $"So, you wanna go from {obj.From} to {obj.To}, eh?", "G'bye");
+            Shell.Current.DisplayAlert("You Deserve It", $"So, you wanna go from {obj.From} to Hawaii, eh?", "Book It!");
         }
 
         int batchSize = 20;
@@ -119,6 +140,25 @@ namespace FlyMe.ViewModels
         public string To { get; set; }
         public DateTime DepartDateTime { get; set; }
         public DateTime ArrivalDateTime { get; set; }
+
+
+        Random randomGen = new Random();
+        public string PhotoUrl
+        {
+            get
+            {
+                int rInt = randomGen.Next(1, 10);
+                return $"beach_{rInt}.jpg";
+            }
+        }
+
+        public string LocationName
+        {
+            get
+            {
+                return "Maui, Hawaii";
+            }
+        }
 
         public string Stops
         {

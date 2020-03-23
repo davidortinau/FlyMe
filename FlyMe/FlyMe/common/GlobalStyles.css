@@ -15,9 +15,20 @@
     background-color: #5561F9;
 }
 
+.frontColor {
+    color: #FFFFFF;
+}
+
 ^Label.emptyLabel {
     font-size: 16;
     color: black;
     margin: 0, 8;
     text-align: center;
+}
+
+.actionButton {
+    height:44;
+    border-radius: 22;
+    background-color: orangered;
+    color: white;
 }

@@ -15,7 +15,7 @@ namespace FlyMe.Droid
 {
 	
 	
-	[System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "1.0.0.0")]
 	public partial class Resource
 	{
 		
@@ -91,19 +91,19 @@ namespace FlyMe.Droid
 			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::FlyMe.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::FlyMe.Droid.Resource.Drawable.notification_tile_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::FlyMe.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.actions = global::FlyMe.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.action_container = global::FlyMe.Droid.Resource.Id.action_container;
 			global::Xamarin.Essentials.Resource.Id.action_divider = global::FlyMe.Droid.Resource.Id.action_divider;
 			global::Xamarin.Essentials.Resource.Id.action_image = global::FlyMe.Droid.Resource.Id.action_image;
 			global::Xamarin.Essentials.Resource.Id.action_text = global::FlyMe.Droid.Resource.Id.action_text;
-			global::Xamarin.Essentials.Resource.Id.actions = global::FlyMe.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.all = global::FlyMe.Droid.Resource.Id.all;
 			global::Xamarin.Essentials.Resource.Id.async = global::FlyMe.Droid.Resource.Id.async;
 			global::Xamarin.Essentials.Resource.Id.blocking = global::FlyMe.Droid.Resource.Id.blocking;
 			global::Xamarin.Essentials.Resource.Id.bottom = global::FlyMe.Droid.Resource.Id.bottom;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::FlyMe.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::FlyMe.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::FlyMe.Droid.Resource.Id.browser_actions_menu_item_icon;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::FlyMe.Droid.Resource.Id.browser_actions_menu_item_text;
-			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::FlyMe.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::FlyMe.Droid.Resource.Id.browser_actions_menu_view;
 			global::Xamarin.Essentials.Resource.Id.center = global::FlyMe.Droid.Resource.Id.center;
 			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::FlyMe.Droid.Resource.Id.center_horizontal;
@@ -158,14 +158,12 @@ namespace FlyMe.Droid
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::FlyMe.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::FlyMe.Droid.Resource.Style.Widget_Compat_NotificationActionText;
 			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::FlyMe.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::FlyMe.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::FlyMe.Droid.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::FlyMe.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::FlyMe.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::FlyMe.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -174,13 +172,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::FlyMe.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontStyle = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -192,7 +185,16 @@ namespace FlyMe.Droid
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_ttcIndex = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor = global::FlyMe.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::FlyMe.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerColor = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerX = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerY = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -205,9 +207,7 @@ namespace FlyMe.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::FlyMe.Droid.Resource.Styleable.GradientColorItem;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::FlyMe.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_in = global::FlyMe.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_out = global::FlyMe.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::FlyMe.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -299,8 +299,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.behavior_overlapTop = global::FlyMe.Droid.Resource.Attribute.behavior_overlapTop;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.behavior_peekHeight = global::FlyMe.Droid.Resource.Attribute.behavior_peekHeight;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.behavior_skipCollapsed = global::FlyMe.Droid.Resource.Attribute.behavior_skipCollapsed;
-			global::Xamarin.Forms.Material.Android.Resource.Attribute.borderWidth = global::FlyMe.Droid.Resource.Attribute.borderWidth;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.borderlessButtonStyle = global::FlyMe.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.borderWidth = global::FlyMe.Droid.Resource.Attribute.borderWidth;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.bottomAppBarStyle = global::FlyMe.Droid.Resource.Attribute.bottomAppBarStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.bottomNavigationStyle = global::FlyMe.Droid.Resource.Attribute.bottomNavigationStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.bottomSheetDialogTheme = global::FlyMe.Droid.Resource.Attribute.bottomSheetDialogTheme;
@@ -366,9 +366,9 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.closeIconVisible = global::FlyMe.Droid.Resource.Attribute.closeIconVisible;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.closeItemLayout = global::FlyMe.Droid.Resource.Attribute.closeItemLayout;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapseContentDescription = global::FlyMe.Droid.Resource.Attribute.collapseContentDescription;
-			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapseIcon = global::FlyMe.Droid.Resource.Attribute.collapseIcon;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapsedTitleGravity = global::FlyMe.Droid.Resource.Attribute.collapsedTitleGravity;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapsedTitleTextAppearance = global::FlyMe.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.collapseIcon = global::FlyMe.Droid.Resource.Attribute.collapseIcon;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.color = global::FlyMe.Droid.Resource.Attribute.color;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.colorAccent = global::FlyMe.Droid.Resource.Attribute.colorAccent;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.colorBackgroundFloating = global::FlyMe.Droid.Resource.Attribute.colorBackgroundFloating;
@@ -414,8 +414,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.dividerVertical = global::FlyMe.Droid.Resource.Attribute.dividerVertical;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.drawableSize = global::FlyMe.Droid.Resource.Attribute.drawableSize;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.drawerArrowStyle = global::FlyMe.Droid.Resource.Attribute.drawerArrowStyle;
-			global::Xamarin.Forms.Material.Android.Resource.Attribute.dropDownListViewStyle = global::FlyMe.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::FlyMe.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.dropDownListViewStyle = global::FlyMe.Droid.Resource.Attribute.dropDownListViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.editTextBackground = global::FlyMe.Droid.Resource.Attribute.editTextBackground;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.editTextColor = global::FlyMe.Droid.Resource.Attribute.editTextColor;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.editTextStyle = global::FlyMe.Droid.Resource.Attribute.editTextStyle;
@@ -477,12 +477,12 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.icon = global::FlyMe.Droid.Resource.Attribute.icon;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconEndPadding = global::FlyMe.Droid.Resource.Attribute.iconEndPadding;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconGravity = global::FlyMe.Droid.Resource.Attribute.iconGravity;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconifiedByDefault = global::FlyMe.Droid.Resource.Attribute.iconifiedByDefault;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconPadding = global::FlyMe.Droid.Resource.Attribute.iconPadding;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconSize = global::FlyMe.Droid.Resource.Attribute.iconSize;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconStartPadding = global::FlyMe.Droid.Resource.Attribute.iconStartPadding;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconTint = global::FlyMe.Droid.Resource.Attribute.iconTint;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconTintMode = global::FlyMe.Droid.Resource.Attribute.iconTintMode;
-			global::Xamarin.Forms.Material.Android.Resource.Attribute.iconifiedByDefault = global::FlyMe.Droid.Resource.Attribute.iconifiedByDefault;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.imageButtonStyle = global::FlyMe.Droid.Resource.Attribute.imageButtonStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.indeterminateProgressStyle = global::FlyMe.Droid.Resource.Attribute.indeterminateProgressStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.initialActivityCount = global::FlyMe.Droid.Resource.Attribute.initialActivityCount;
@@ -691,9 +691,9 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleMargin = global::FlyMe.Droid.Resource.Attribute.titleMargin;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleMarginBottom = global::FlyMe.Droid.Resource.Attribute.titleMarginBottom;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleMarginEnd = global::FlyMe.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleMargins = global::FlyMe.Droid.Resource.Attribute.titleMargins;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleMarginStart = global::FlyMe.Droid.Resource.Attribute.titleMarginStart;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleMarginTop = global::FlyMe.Droid.Resource.Attribute.titleMarginTop;
-			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleMargins = global::FlyMe.Droid.Resource.Attribute.titleMargins;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleTextAppearance = global::FlyMe.Droid.Resource.Attribute.titleTextAppearance;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleTextColor = global::FlyMe.Droid.Resource.Attribute.titleTextColor;
 			global::Xamarin.Forms.Material.Android.Resource.Attribute.titleTextStyle = global::FlyMe.Droid.Resource.Attribute.titleTextStyle;
@@ -822,11 +822,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::FlyMe.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
 			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::FlyMe.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
 			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_tabs_ripple_color = global::FlyMe.Droid.Resource.Color.mtrl_tabs_ripple_color;
-			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::FlyMe.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_textinput_default_box_stroke_color = global::FlyMe.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
 			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_textinput_disabled_color = global::FlyMe.Droid.Resource.Color.mtrl_textinput_disabled_color;
 			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::FlyMe.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
 			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::FlyMe.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Xamarin.Forms.Material.Android.Resource.Color.mtrl_text_btn_text_color_selector = global::FlyMe.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
 			global::Xamarin.Forms.Material.Android.Resource.Color.notification_action_color_filter = global::FlyMe.Droid.Resource.Color.notification_action_color_filter;
 			global::Xamarin.Forms.Material.Android.Resource.Color.notification_icon_bg_color = global::FlyMe.Droid.Resource.Color.notification_icon_bg_color;
 			global::Xamarin.Forms.Material.Android.Resource.Color.notification_material_background_media_default_color = global::FlyMe.Droid.Resource.Color.notification_material_background_media_default_color;
@@ -1143,6 +1143,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_tab_indicator_material = global::FlyMe.Droid.Resource.Drawable.abc_tab_indicator_material;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_search_material = global::FlyMe.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_text_cursor_material = global::FlyMe.Droid.Resource.Drawable.abc_text_cursor_material;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::FlyMe.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::FlyMe.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
@@ -1150,11 +1155,6 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::FlyMe.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::FlyMe.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::FlyMe.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
-			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
-			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
-			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
-			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::FlyMe.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
-			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_textfield_search_material = global::FlyMe.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.abc_vector_test = global::FlyMe.Droid.Resource.Drawable.abc_vector_test;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.avd_hide_password = global::FlyMe.Droid.Resource.Drawable.avd_hide_password;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.avd_show_password = global::FlyMe.Droid.Resource.Drawable.avd_show_password;
@@ -1186,13 +1186,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::FlyMe.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.tooltip_frame_dark = global::FlyMe.Droid.Resource.Drawable.tooltip_frame_dark;
 			global::Xamarin.Forms.Material.Android.Resource.Drawable.tooltip_frame_light = global::FlyMe.Droid.Resource.Drawable.tooltip_frame_light;
-			global::Xamarin.Forms.Material.Android.Resource.Id.ALT = global::FlyMe.Droid.Resource.Id.ALT;
-			global::Xamarin.Forms.Material.Android.Resource.Id.CTRL = global::FlyMe.Droid.Resource.Id.CTRL;
-			global::Xamarin.Forms.Material.Android.Resource.Id.FUNCTION = global::FlyMe.Droid.Resource.Id.FUNCTION;
-			global::Xamarin.Forms.Material.Android.Resource.Id.META = global::FlyMe.Droid.Resource.Id.META;
-			global::Xamarin.Forms.Material.Android.Resource.Id.SHIFT = global::FlyMe.Droid.Resource.Id.SHIFT;
-			global::Xamarin.Forms.Material.Android.Resource.Id.SYM = global::FlyMe.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Material.Android.Resource.Id.action0 = global::FlyMe.Droid.Resource.Id.action0;
+			global::Xamarin.Forms.Material.Android.Resource.Id.actions = global::FlyMe.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Material.Android.Resource.Id.action_bar = global::FlyMe.Droid.Resource.Id.action_bar;
 			global::Xamarin.Forms.Material.Android.Resource.Id.action_bar_activity_content = global::FlyMe.Droid.Resource.Id.action_bar_activity_content;
 			global::Xamarin.Forms.Material.Android.Resource.Id.action_bar_container = global::FlyMe.Droid.Resource.Id.action_bar_container;
@@ -1210,11 +1205,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Id.action_mode_bar_stub = global::FlyMe.Droid.Resource.Id.action_mode_bar_stub;
 			global::Xamarin.Forms.Material.Android.Resource.Id.action_mode_close_button = global::FlyMe.Droid.Resource.Id.action_mode_close_button;
 			global::Xamarin.Forms.Material.Android.Resource.Id.action_text = global::FlyMe.Droid.Resource.Id.action_text;
-			global::Xamarin.Forms.Material.Android.Resource.Id.actions = global::FlyMe.Droid.Resource.Id.actions;
 			global::Xamarin.Forms.Material.Android.Resource.Id.activity_chooser_view_content = global::FlyMe.Droid.Resource.Id.activity_chooser_view_content;
 			global::Xamarin.Forms.Material.Android.Resource.Id.add = global::FlyMe.Droid.Resource.Id.add;
 			global::Xamarin.Forms.Material.Android.Resource.Id.alertTitle = global::FlyMe.Droid.Resource.Id.alertTitle;
 			global::Xamarin.Forms.Material.Android.Resource.Id.all = global::FlyMe.Droid.Resource.Id.all;
+			global::Xamarin.Forms.Material.Android.Resource.Id.ALT = global::FlyMe.Droid.Resource.Id.ALT;
 			global::Xamarin.Forms.Material.Android.Resource.Id.always = global::FlyMe.Droid.Resource.Id.always;
 			global::Xamarin.Forms.Material.Android.Resource.Id.async = global::FlyMe.Droid.Resource.Id.async;
 			global::Xamarin.Forms.Material.Android.Resource.Id.auto = global::FlyMe.Droid.Resource.Id.auto;
@@ -1237,6 +1232,7 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Id.content = global::FlyMe.Droid.Resource.Id.content;
 			global::Xamarin.Forms.Material.Android.Resource.Id.contentPanel = global::FlyMe.Droid.Resource.Id.contentPanel;
 			global::Xamarin.Forms.Material.Android.Resource.Id.coordinator = global::FlyMe.Droid.Resource.Id.coordinator;
+			global::Xamarin.Forms.Material.Android.Resource.Id.CTRL = global::FlyMe.Droid.Resource.Id.CTRL;
 			global::Xamarin.Forms.Material.Android.Resource.Id.custom = global::FlyMe.Droid.Resource.Id.custom;
 			global::Xamarin.Forms.Material.Android.Resource.Id.customPanel = global::FlyMe.Droid.Resource.Id.customPanel;
 			global::Xamarin.Forms.Material.Android.Resource.Id.decor_content_parent = global::FlyMe.Droid.Resource.Id.decor_content_parent;
@@ -1253,16 +1249,17 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Id.enterAlways = global::FlyMe.Droid.Resource.Id.enterAlways;
 			global::Xamarin.Forms.Material.Android.Resource.Id.enterAlwaysCollapsed = global::FlyMe.Droid.Resource.Id.enterAlwaysCollapsed;
 			global::Xamarin.Forms.Material.Android.Resource.Id.exitUntilCollapsed = global::FlyMe.Droid.Resource.Id.exitUntilCollapsed;
-			global::Xamarin.Forms.Material.Android.Resource.Id.expand_activities_button = global::FlyMe.Droid.Resource.Id.expand_activities_button;
 			global::Xamarin.Forms.Material.Android.Resource.Id.expanded_menu = global::FlyMe.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.Material.Android.Resource.Id.expand_activities_button = global::FlyMe.Droid.Resource.Id.expand_activities_button;
 			global::Xamarin.Forms.Material.Android.Resource.Id.fill = global::FlyMe.Droid.Resource.Id.fill;
+			global::Xamarin.Forms.Material.Android.Resource.Id.filled = global::FlyMe.Droid.Resource.Id.filled;
 			global::Xamarin.Forms.Material.Android.Resource.Id.fill_horizontal = global::FlyMe.Droid.Resource.Id.fill_horizontal;
 			global::Xamarin.Forms.Material.Android.Resource.Id.fill_vertical = global::FlyMe.Droid.Resource.Id.fill_vertical;
-			global::Xamarin.Forms.Material.Android.Resource.Id.filled = global::FlyMe.Droid.Resource.Id.filled;
 			global::Xamarin.Forms.Material.Android.Resource.Id.@fixed = global::FlyMe.Droid.Resource.Id.@fixed;
 			global::Xamarin.Forms.Material.Android.Resource.Id.flyoutcontent_appbar = global::FlyMe.Droid.Resource.Id.flyoutcontent_appbar;
 			global::Xamarin.Forms.Material.Android.Resource.Id.flyoutcontent_recycler = global::FlyMe.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Material.Android.Resource.Id.forever = global::FlyMe.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.Material.Android.Resource.Id.FUNCTION = global::FlyMe.Droid.Resource.Id.FUNCTION;
 			global::Xamarin.Forms.Material.Android.Resource.Id.ghost_view = global::FlyMe.Droid.Resource.Id.ghost_view;
 			global::Xamarin.Forms.Material.Android.Resource.Id.group_divider = global::FlyMe.Droid.Resource.Id.group_divider;
 			global::Xamarin.Forms.Material.Android.Resource.Id.home = global::FlyMe.Droid.Resource.Id.home;
@@ -1289,6 +1286,7 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Id.materialformsedittext = global::FlyMe.Droid.Resource.Id.materialformsedittext;
 			global::Xamarin.Forms.Material.Android.Resource.Id.media_actions = global::FlyMe.Droid.Resource.Id.media_actions;
 			global::Xamarin.Forms.Material.Android.Resource.Id.message = global::FlyMe.Droid.Resource.Id.message;
+			global::Xamarin.Forms.Material.Android.Resource.Id.META = global::FlyMe.Droid.Resource.Id.META;
 			global::Xamarin.Forms.Material.Android.Resource.Id.middle = global::FlyMe.Droid.Resource.Id.middle;
 			global::Xamarin.Forms.Material.Android.Resource.Id.mini = global::FlyMe.Droid.Resource.Id.mini;
 			global::Xamarin.Forms.Material.Android.Resource.Id.mtrl_child_content_container = global::FlyMe.Droid.Resource.Id.mtrl_child_content_container;
@@ -1317,10 +1315,10 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Id.save_scale_type = global::FlyMe.Droid.Resource.Id.save_scale_type;
 			global::Xamarin.Forms.Material.Android.Resource.Id.screen = global::FlyMe.Droid.Resource.Id.screen;
 			global::Xamarin.Forms.Material.Android.Resource.Id.scroll = global::FlyMe.Droid.Resource.Id.scroll;
+			global::Xamarin.Forms.Material.Android.Resource.Id.scrollable = global::FlyMe.Droid.Resource.Id.scrollable;
 			global::Xamarin.Forms.Material.Android.Resource.Id.scrollIndicatorDown = global::FlyMe.Droid.Resource.Id.scrollIndicatorDown;
 			global::Xamarin.Forms.Material.Android.Resource.Id.scrollIndicatorUp = global::FlyMe.Droid.Resource.Id.scrollIndicatorUp;
 			global::Xamarin.Forms.Material.Android.Resource.Id.scrollView = global::FlyMe.Droid.Resource.Id.scrollView;
-			global::Xamarin.Forms.Material.Android.Resource.Id.scrollable = global::FlyMe.Droid.Resource.Id.scrollable;
 			global::Xamarin.Forms.Material.Android.Resource.Id.search_badge = global::FlyMe.Droid.Resource.Id.search_badge;
 			global::Xamarin.Forms.Material.Android.Resource.Id.search_bar = global::FlyMe.Droid.Resource.Id.search_bar;
 			global::Xamarin.Forms.Material.Android.Resource.Id.search_button = global::FlyMe.Droid.Resource.Id.search_button;
@@ -1331,10 +1329,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Id.search_plate = global::FlyMe.Droid.Resource.Id.search_plate;
 			global::Xamarin.Forms.Material.Android.Resource.Id.search_src_text = global::FlyMe.Droid.Resource.Id.search_src_text;
 			global::Xamarin.Forms.Material.Android.Resource.Id.search_voice_btn = global::FlyMe.Droid.Resource.Id.search_voice_btn;
-			global::Xamarin.Forms.Material.Android.Resource.Id.select_dialog_listview = global::FlyMe.Droid.Resource.Id.select_dialog_listview;
 			global::Xamarin.Forms.Material.Android.Resource.Id.selected = global::FlyMe.Droid.Resource.Id.selected;
+			global::Xamarin.Forms.Material.Android.Resource.Id.select_dialog_listview = global::FlyMe.Droid.Resource.Id.select_dialog_listview;
 			global::Xamarin.Forms.Material.Android.Resource.Id.shellcontent_appbar = global::FlyMe.Droid.Resource.Id.shellcontent_appbar;
 			global::Xamarin.Forms.Material.Android.Resource.Id.shellcontent_toolbar = global::FlyMe.Droid.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.Material.Android.Resource.Id.SHIFT = global::FlyMe.Droid.Resource.Id.SHIFT;
 			global::Xamarin.Forms.Material.Android.Resource.Id.shortcut = global::FlyMe.Droid.Resource.Id.shortcut;
 			global::Xamarin.Forms.Material.Android.Resource.Id.showCustom = global::FlyMe.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Material.Android.Resource.Id.showHome = global::FlyMe.Droid.Resource.Id.showHome;
@@ -1354,19 +1353,20 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Id.stretch = global::FlyMe.Droid.Resource.Id.stretch;
 			global::Xamarin.Forms.Material.Android.Resource.Id.submenuarrow = global::FlyMe.Droid.Resource.Id.submenuarrow;
 			global::Xamarin.Forms.Material.Android.Resource.Id.submit_area = global::FlyMe.Droid.Resource.Id.submit_area;
+			global::Xamarin.Forms.Material.Android.Resource.Id.SYM = global::FlyMe.Droid.Resource.Id.SYM;
 			global::Xamarin.Forms.Material.Android.Resource.Id.tabMode = global::FlyMe.Droid.Resource.Id.tabMode;
 			global::Xamarin.Forms.Material.Android.Resource.Id.tag_transition_group = global::FlyMe.Droid.Resource.Id.tag_transition_group;
 			global::Xamarin.Forms.Material.Android.Resource.Id.tag_unhandled_key_event_manager = global::FlyMe.Droid.Resource.Id.tag_unhandled_key_event_manager;
 			global::Xamarin.Forms.Material.Android.Resource.Id.tag_unhandled_key_listeners = global::FlyMe.Droid.Resource.Id.tag_unhandled_key_listeners;
 			global::Xamarin.Forms.Material.Android.Resource.Id.text = global::FlyMe.Droid.Resource.Id.text;
 			global::Xamarin.Forms.Material.Android.Resource.Id.text2 = global::FlyMe.Droid.Resource.Id.text2;
+			global::Xamarin.Forms.Material.Android.Resource.Id.textinput_counter = global::FlyMe.Droid.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.Material.Android.Resource.Id.textinput_error = global::FlyMe.Droid.Resource.Id.textinput_error;
+			global::Xamarin.Forms.Material.Android.Resource.Id.textinput_helper_text = global::FlyMe.Droid.Resource.Id.textinput_helper_text;
 			global::Xamarin.Forms.Material.Android.Resource.Id.textSpacerNoButtons = global::FlyMe.Droid.Resource.Id.textSpacerNoButtons;
 			global::Xamarin.Forms.Material.Android.Resource.Id.textSpacerNoTitle = global::FlyMe.Droid.Resource.Id.textSpacerNoTitle;
 			global::Xamarin.Forms.Material.Android.Resource.Id.textStart = global::FlyMe.Droid.Resource.Id.textStart;
 			global::Xamarin.Forms.Material.Android.Resource.Id.text_input_password_toggle = global::FlyMe.Droid.Resource.Id.text_input_password_toggle;
-			global::Xamarin.Forms.Material.Android.Resource.Id.textinput_counter = global::FlyMe.Droid.Resource.Id.textinput_counter;
-			global::Xamarin.Forms.Material.Android.Resource.Id.textinput_error = global::FlyMe.Droid.Resource.Id.textinput_error;
-			global::Xamarin.Forms.Material.Android.Resource.Id.textinput_helper_text = global::FlyMe.Droid.Resource.Id.textinput_helper_text;
 			global::Xamarin.Forms.Material.Android.Resource.Id.time = global::FlyMe.Droid.Resource.Id.time;
 			global::Xamarin.Forms.Material.Android.Resource.Id.title = global::FlyMe.Droid.Resource.Id.title;
 			global::Xamarin.Forms.Material.Android.Resource.Id.titleDividerNoCustom = global::FlyMe.Droid.Resource.Id.titleDividerNoCustom;
@@ -1479,8 +1479,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_action_bar_up_description = global::FlyMe.Droid.Resource.String.abc_action_bar_up_description;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_action_menu_overflow_description = global::FlyMe.Droid.Resource.String.abc_action_menu_overflow_description;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_action_mode_done = global::FlyMe.Droid.Resource.String.abc_action_mode_done;
-			global::Xamarin.Forms.Material.Android.Resource.String.abc_activity_chooser_view_see_all = global::FlyMe.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_activitychooserview_choose_application = global::FlyMe.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Material.Android.Resource.String.abc_activity_chooser_view_see_all = global::FlyMe.Droid.Resource.String.abc_activity_chooser_view_see_all;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_capital_off = global::FlyMe.Droid.Resource.String.abc_capital_off;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_capital_on = global::FlyMe.Droid.Resource.String.abc_capital_on;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_font_family_body_1_material = global::FlyMe.Droid.Resource.String.abc_font_family_body_1_material;
@@ -1505,12 +1505,12 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_menu_space_shortcut_label = global::FlyMe.Droid.Resource.String.abc_menu_space_shortcut_label;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_menu_sym_shortcut_label = global::FlyMe.Droid.Resource.String.abc_menu_sym_shortcut_label;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_prepend_shortcut_label = global::FlyMe.Droid.Resource.String.abc_prepend_shortcut_label;
-			global::Xamarin.Forms.Material.Android.Resource.String.abc_search_hint = global::FlyMe.Droid.Resource.String.abc_search_hint;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_searchview_description_clear = global::FlyMe.Droid.Resource.String.abc_searchview_description_clear;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_searchview_description_query = global::FlyMe.Droid.Resource.String.abc_searchview_description_query;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_searchview_description_search = global::FlyMe.Droid.Resource.String.abc_searchview_description_search;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_searchview_description_submit = global::FlyMe.Droid.Resource.String.abc_searchview_description_submit;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_searchview_description_voice = global::FlyMe.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.Material.Android.Resource.String.abc_search_hint = global::FlyMe.Droid.Resource.String.abc_search_hint;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_shareactionprovider_share_with = global::FlyMe.Droid.Resource.String.abc_shareactionprovider_share_with;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_shareactionprovider_share_with_application = global::FlyMe.Droid.Resource.String.abc_shareactionprovider_share_with_application;
 			global::Xamarin.Forms.Material.Android.Resource.String.abc_toolbar_collapse_description = global::FlyMe.Droid.Resource.String.abc_toolbar_collapse_description;
@@ -1541,8 +1541,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::FlyMe.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::FlyMe.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_CardView = global::FlyMe.Droid.Resource.Style.Base_CardView;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::FlyMe.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::FlyMe.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::FlyMe.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_TextAppearance_AppCompat = global::FlyMe.Droid.Resource.Style.Base_TextAppearance_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::FlyMe.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::FlyMe.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
@@ -1591,37 +1591,6 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::FlyMe.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::FlyMe.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::FlyMe.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::FlyMe.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::FlyMe.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::FlyMe.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
@@ -1631,6 +1600,39 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_Theme_MaterialComponents = global::FlyMe.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::FlyMe.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
@@ -1638,13 +1640,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::FlyMe.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::FlyMe.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V21_Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Base_V21_Theme_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::FlyMe.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V22_Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Base_V22_Theme_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V23_Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Base_V23_Theme_AppCompat;
@@ -1654,11 +1654,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::FlyMe.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V28_Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Base_V28_Theme_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V28_Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Base_V7_Theme_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::FlyMe.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::FlyMe.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::FlyMe.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::FlyMe.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
@@ -1674,13 +1674,13 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_Button = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::FlyMe.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
@@ -1726,6 +1726,7 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.CardView = global::FlyMe.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Material.Android.Resource.Style.CardView_Dark = global::FlyMe.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Material.Android.Resource.Style.CardView_Light = global::FlyMe.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Material.Android.Resource.Style.collectionViewStyle = global::FlyMe.Droid.Resource.Style.collectionViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Style.NestedScrollBarStyle = global::FlyMe.Droid.Resource.Style.NestedScrollBarStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Platform_AppCompat = global::FlyMe.Droid.Resource.Style.Platform_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Platform_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Platform_AppCompat_Light;
@@ -1750,12 +1751,12 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
-			global::Xamarin.Forms.Material.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::FlyMe.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::FlyMe.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::Xamarin.Forms.Material.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::FlyMe.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
 			global::Xamarin.Forms.Material.Android.Resource.Style.TextAppearance_AppCompat = global::FlyMe.Droid.Resource.Style.TextAppearance_AppCompat;
@@ -1842,54 +1843,6 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::FlyMe.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
 			global::Xamarin.Forms.Material.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::FlyMe.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
 			global::Xamarin.Forms.Material.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::FlyMe.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Theme_AppCompat;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design = global::FlyMe.Droid.Resource.Style.Theme_Design;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_Light = global::FlyMe.Droid.Resource.Style.Theme_Design_Light;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_Design_NoActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
 			global::Xamarin.Forms.Material.Android.Resource.Style.ThemeOverlay_AppCompat = global::FlyMe.Droid.Resource.Style.ThemeOverlay_AppCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::FlyMe.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
 			global::Xamarin.Forms.Material.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::FlyMe.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
@@ -1909,6 +1862,54 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::FlyMe.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
 			global::Xamarin.Forms.Material.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::FlyMe.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
 			global::Xamarin.Forms.Material.Android.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::FlyMe.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat = global::FlyMe.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Dialog = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design = global::FlyMe.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_Light = global::FlyMe.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_Design_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_CompactMenu = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Dialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_NoActionBar = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::FlyMe.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ActionBar = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ActionBar;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
@@ -1921,13 +1922,13 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_Button = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_Button_Small = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_Button_Small;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::FlyMe.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
@@ -2009,11 +2010,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_CardView = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_Chip_Action = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
-			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_ChipGroup = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_CompoundButton_CheckBox = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_CompoundButton_CheckBox;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
 			global::Xamarin.Forms.Material.Android.Resource.Style.Widget_MaterialComponents_NavigationView = global::FlyMe.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
@@ -2039,8 +2040,9 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Style.XamarinFormsMaterialProgressBarHorizontal = global::FlyMe.Droid.Resource.Style.XamarinFormsMaterialProgressBarHorizontal;
 			global::Xamarin.Forms.Material.Android.Resource.Style.XamarinFormsMaterialSlider = global::FlyMe.Droid.Resource.Style.XamarinFormsMaterialSlider;
 			global::Xamarin.Forms.Material.Android.Resource.Style.XamarinFormsMaterialTheme = global::FlyMe.Droid.Resource.Style.XamarinFormsMaterialTheme;
-			global::Xamarin.Forms.Material.Android.Resource.Style.collectionViewStyle = global::FlyMe.Droid.Resource.Style.collectionViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar = global::FlyMe.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBarLayout = global::FlyMe.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::FlyMe.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_background = global::FlyMe.Droid.Resource.Styleable.ActionBar_background;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_backgroundSplit = global::FlyMe.Droid.Resource.Styleable.ActionBar_backgroundSplit;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_backgroundStacked = global::FlyMe.Droid.Resource.Styleable.ActionBar_backgroundStacked;
@@ -2070,8 +2072,6 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::FlyMe.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_title = global::FlyMe.Droid.Resource.Styleable.ActionBar_title;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBar_titleTextStyle = global::FlyMe.Droid.Resource.Styleable.ActionBar_titleTextStyle;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBarLayout = global::FlyMe.Droid.Resource.Styleable.ActionBarLayout;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::FlyMe.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionMenuItemView = global::FlyMe.Droid.Resource.Styleable.ActionMenuItemView;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::FlyMe.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ActionMenuView = global::FlyMe.Droid.Resource.Styleable.ActionMenuView;
@@ -2110,20 +2110,20 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::FlyMe.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::FlyMe.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout = global::FlyMe.Droid.Resource.Styleable.AppBarLayout;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_android_background = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_android_background;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_elevation = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_elevation;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_expanded = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_expanded;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayoutStates = global::FlyMe.Droid.Resource.Styleable.AppBarLayoutStates;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::FlyMe.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::FlyMe.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayoutStates_state_liftable = global::FlyMe.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayoutStates_state_lifted = global::FlyMe.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_android_background = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_elevation = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_expanded = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_expanded;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_Layout = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_Layout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppBarLayout_liftOnScroll = global::FlyMe.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatImageView = global::FlyMe.Droid.Resource.Styleable.AppCompatImageView;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatImageView_android_src = global::FlyMe.Droid.Resource.Styleable.AppCompatImageView_android_src;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::FlyMe.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
@@ -2219,8 +2219,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::FlyMe.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
@@ -2316,6 +2316,13 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CardView_contentPaddingRight = global::FlyMe.Droid.Resource.Styleable.CardView_contentPaddingRight;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CardView_contentPaddingTop = global::FlyMe.Droid.Resource.Styleable.CardView_contentPaddingTop;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Chip = global::FlyMe.Droid.Resource.Styleable.Chip;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup = global::FlyMe.Droid.Resource.Styleable.ChipGroup;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_checkedChip = global::FlyMe.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_chipSpacing = global::FlyMe.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::FlyMe.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::FlyMe.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_singleLine = global::FlyMe.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_singleSelection = global::FlyMe.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Chip_android_checkable = global::FlyMe.Droid.Resource.Styleable.Chip_android_checkable;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Chip_android_ellipsize = global::FlyMe.Droid.Resource.Styleable.Chip_android_ellipsize;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Chip_android_maxWidth = global::FlyMe.Droid.Resource.Styleable.Chip_android_maxWidth;
@@ -2350,13 +2357,6 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Chip_showMotionSpec = global::FlyMe.Droid.Resource.Styleable.Chip_showMotionSpec;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Chip_textEndPadding = global::FlyMe.Droid.Resource.Styleable.Chip_textEndPadding;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Chip_textStartPadding = global::FlyMe.Droid.Resource.Styleable.Chip_textStartPadding;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup = global::FlyMe.Droid.Resource.Styleable.ChipGroup;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_checkedChip = global::FlyMe.Droid.Resource.Styleable.ChipGroup_checkedChip;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_chipSpacing = global::FlyMe.Droid.Resource.Styleable.ChipGroup_chipSpacing;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::FlyMe.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_chipSpacingVertical = global::FlyMe.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_singleLine = global::FlyMe.Droid.Resource.Styleable.ChipGroup_singleLine;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.ChipGroup_singleSelection = global::FlyMe.Droid.Resource.Styleable.ChipGroup_singleSelection;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
@@ -2368,15 +2368,15 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::FlyMe.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ColorStateListItem = global::FlyMe.Droid.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ColorStateListItem_alpha = global::FlyMe.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::FlyMe.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
@@ -2387,7 +2387,6 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::FlyMe.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_keylines = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_Layout = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -2396,6 +2395,7 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::FlyMe.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.DesignTheme = global::FlyMe.Droid.Resource.Styleable.DesignTheme;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::FlyMe.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::FlyMe.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
@@ -2411,6 +2411,8 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_elevation = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_elevation;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_fabCustomSize = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
@@ -2422,18 +2424,10 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_showMotionSpec = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::FlyMe.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FlowLayout = global::FlyMe.Droid.Resource.Styleable.FlowLayout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FlowLayout_itemSpacing = global::FlyMe.Droid.Resource.Styleable.FlowLayout_itemSpacing;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FlowLayout_lineSpacing = global::FlyMe.Droid.Resource.Styleable.FlowLayout_lineSpacing;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily = global::FlyMe.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamilyFont = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamilyFont_android_font = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -2445,11 +2439,20 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamilyFont_ttcIndex = global::FlyMe.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::FlyMe.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ForegroundLinearLayout = global::FlyMe.Droid.Resource.Styleable.ForegroundLinearLayout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::FlyMe.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::FlyMe.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::FlyMe.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor = global::FlyMe.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColorItem = global::FlyMe.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColorItem_android_color = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColorItem_android_offset = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_centerColor = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_centerX = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_centerY = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -2462,9 +2465,6 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_startY = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_tileMode = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColor_android_type = global::FlyMe.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColorItem = global::FlyMe.Droid.Resource.Styleable.GradientColorItem;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColorItem_android_color = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.GradientColorItem_android_offset = global::FlyMe.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
@@ -2473,13 +2473,13 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_divider = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_divider;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::FlyMe.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ListPopupWindow = global::FlyMe.Droid.Resource.Styleable.ListPopupWindow;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::FlyMe.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::FlyMe.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
@@ -2591,11 +2591,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.NavigationView_itemTextColor = global::FlyMe.Droid.Resource.Styleable.NavigationView_itemTextColor;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.NavigationView_menu = global::FlyMe.Droid.Resource.Styleable.NavigationView_menu;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindow = global::FlyMe.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindowBackgroundState = global::FlyMe.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::FlyMe.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::FlyMe.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::FlyMe.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::FlyMe.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindowBackgroundState = global::FlyMe.Droid.Resource.Styleable.PopupWindowBackgroundState;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::FlyMe.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.RecycleListView = global::FlyMe.Droid.Resource.Styleable.RecycleListView;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::FlyMe.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::FlyMe.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
@@ -2634,12 +2634,12 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::FlyMe.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SearchView_voiceIcon = global::FlyMe.Droid.Resource.Styleable.SearchView_voiceIcon;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Snackbar = global::FlyMe.Droid.Resource.Styleable.Snackbar;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::FlyMe.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.Snackbar_snackbarStyle = global::FlyMe.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SnackbarLayout = global::FlyMe.Droid.Resource.Styleable.SnackbarLayout;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::FlyMe.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SnackbarLayout_elevation = global::FlyMe.Droid.Resource.Styleable.SnackbarLayout_elevation;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::FlyMe.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.Snackbar_snackbarButtonStyle = global::FlyMe.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.Snackbar_snackbarStyle = global::FlyMe.Droid.Resource.Styleable.Snackbar_snackbarStyle;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Spinner = global::FlyMe.Droid.Resource.Styleable.Spinner;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::FlyMe.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Spinner_android_entries = global::FlyMe.Droid.Resource.Styleable.Spinner_android_entries;
@@ -2647,14 +2647,14 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Spinner_android_prompt = global::FlyMe.Droid.Resource.Styleable.Spinner_android_prompt;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Spinner_popupTheme = global::FlyMe.Droid.Resource.Styleable.Spinner_popupTheme;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawable = global::FlyMe.Droid.Resource.Styleable.StateListDrawable;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawableItem = global::FlyMe.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::FlyMe.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawable_android_constantSize = global::FlyMe.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawable_android_dither = global::FlyMe.Droid.Resource.Styleable.StateListDrawable_android_dither;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::FlyMe.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::FlyMe.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawable_android_variablePadding = global::FlyMe.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawable_android_visible = global::FlyMe.Droid.Resource.Styleable.StateListDrawable_android_visible;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawableItem = global::FlyMe.Droid.Resource.Styleable.StateListDrawableItem;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.StateListDrawableItem_android_drawable = global::FlyMe.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SwitchCompat = global::FlyMe.Droid.Resource.Styleable.SwitchCompat;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SwitchCompat_android_textOff = global::FlyMe.Droid.Resource.Styleable.SwitchCompat_android_textOff;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.SwitchCompat_android_textOn = global::FlyMe.Droid.Resource.Styleable.SwitchCompat_android_textOn;
@@ -2772,17 +2772,12 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleMargin = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleMargin;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleMargins = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleMarginStart = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleMarginStart;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleMarginTop = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleMarginTop;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleMargins = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleMargins;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.Toolbar_titleTextColor = global::FlyMe.Droid.Resource.Styleable.Toolbar_titleTextColor;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.View = global::FlyMe.Droid.Resource.Styleable.View;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_android_focusable = global::FlyMe.Droid.Resource.Styleable.View_android_focusable;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_android_theme = global::FlyMe.Droid.Resource.Styleable.View_android_theme;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_paddingEnd = global::FlyMe.Droid.Resource.Styleable.View_paddingEnd;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_paddingStart = global::FlyMe.Droid.Resource.Styleable.View_paddingStart;
-			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_theme = global::FlyMe.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ViewBackgroundHelper = global::FlyMe.Droid.Resource.Styleable.ViewBackgroundHelper;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::FlyMe.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::FlyMe.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
@@ -2791,6 +2786,11 @@ namespace FlyMe.Droid
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ViewStubCompat_android_id = global::FlyMe.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::FlyMe.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Xamarin.Forms.Material.Android.Resource.Styleable.ViewStubCompat_android_layout = global::FlyMe.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_android_focusable = global::FlyMe.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_android_theme = global::FlyMe.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_paddingEnd = global::FlyMe.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_paddingStart = global::FlyMe.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.Material.Android.Resource.Styleable.View_theme = global::FlyMe.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::FlyMe.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::FlyMe.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::FlyMe.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -10902,94 +10902,124 @@ namespace FlyMe.Droid
 			public const int banner_06 = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int design_bottom_navigation_item_background = 2131165282;
+			public const int beach_1 = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int design_fab_background = 2131165283;
+			public const int beach_10 = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int design_ic_visibility = 2131165284;
+			public const int beach_2 = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int design_ic_visibility_off = 2131165285;
+			public const int beach_3 = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int design_password_eye = 2131165286;
+			public const int beach_4 = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int design_snackbar_background = 2131165287;
+			public const int beach_5 = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int ic_mtrl_chip_checked_black = 2131165288;
+			public const int beach_6 = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int ic_mtrl_chip_checked_circle = 2131165289;
+			public const int beach_7 = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int ic_mtrl_chip_close_circle = 2131165290;
+			public const int beach_8 = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int MaterialActivityIndicatorBackground = 2131165291;
+			public const int beach_9 = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int MaterialProgressBar = 2131165292;
+			public const int design_bottom_navigation_item_background = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int mtrl_snackbar_background = 2131165293;
+			public const int design_fab_background = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int mtrl_tabs_default_indicator = 2131165294;
+			public const int design_ic_visibility = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int navigation_empty_icon = 2131165295;
+			public const int design_ic_visibility_off = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int notification_action_background = 2131165296;
+			public const int design_password_eye = 2131165296;
 			
 			// aapt resource value: 0x7F070071
-			public const int notification_bg = 2131165297;
+			public const int design_snackbar_background = 2131165297;
 			
 			// aapt resource value: 0x7F070072
-			public const int notification_bg_low = 2131165298;
+			public const int ic_mtrl_chip_checked_black = 2131165298;
 			
 			// aapt resource value: 0x7F070073
-			public const int notification_bg_low_normal = 2131165299;
+			public const int ic_mtrl_chip_checked_circle = 2131165299;
 			
 			// aapt resource value: 0x7F070074
-			public const int notification_bg_low_pressed = 2131165300;
+			public const int ic_mtrl_chip_close_circle = 2131165300;
 			
 			// aapt resource value: 0x7F070075
-			public const int notification_bg_normal = 2131165301;
+			public const int MaterialActivityIndicatorBackground = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int notification_bg_normal_pressed = 2131165302;
+			public const int MaterialProgressBar = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int notification_icon_background = 2131165303;
+			public const int mtrl_snackbar_background = 2131165303;
 			
 			// aapt resource value: 0x7F070078
-			public const int notification_template_icon_bg = 2131165304;
+			public const int mtrl_tabs_default_indicator = 2131165304;
 			
 			// aapt resource value: 0x7F070079
-			public const int notification_template_icon_low_bg = 2131165305;
+			public const int navigation_empty_icon = 2131165305;
 			
 			// aapt resource value: 0x7F07007A
-			public const int notification_tile_bg = 2131165306;
+			public const int notification_action_background = 2131165306;
 			
 			// aapt resource value: 0x7F07007B
-			public const int notify_panel_notification_icon_bg = 2131165307;
+			public const int notification_bg = 2131165307;
 			
 			// aapt resource value: 0x7F07007C
-			public const int plane = 2131165308;
+			public const int notification_bg_low = 2131165308;
 			
 			// aapt resource value: 0x7F07007D
-			public const int splash_screen = 2131165309;
+			public const int notification_bg_low_normal = 2131165309;
 			
 			// aapt resource value: 0x7F07007E
-			public const int tooltip_frame_dark = 2131165310;
+			public const int notification_bg_low_pressed = 2131165310;
 			
 			// aapt resource value: 0x7F07007F
-			public const int tooltip_frame_light = 2131165311;
+			public const int notification_bg_normal = 2131165311;
+			
+			// aapt resource value: 0x7F070080
+			public const int notification_bg_normal_pressed = 2131165312;
+			
+			// aapt resource value: 0x7F070081
+			public const int notification_icon_background = 2131165313;
+			
+			// aapt resource value: 0x7F070082
+			public const int notification_template_icon_bg = 2131165314;
+			
+			// aapt resource value: 0x7F070083
+			public const int notification_template_icon_low_bg = 2131165315;
+			
+			// aapt resource value: 0x7F070084
+			public const int notification_tile_bg = 2131165316;
+			
+			// aapt resource value: 0x7F070085
+			public const int notify_panel_notification_icon_bg = 2131165317;
+			
+			// aapt resource value: 0x7F070086
+			public const int plane = 2131165318;
+			
+			// aapt resource value: 0x7F070087
+			public const int splash_screen = 2131165319;
+			
+			// aapt resource value: 0x7F070088
+			public const int tooltip_frame_dark = 2131165320;
+			
+			// aapt resource value: 0x7F070089
+			public const int tooltip_frame_light = 2131165321;
 			
 			static Drawable()
 			{

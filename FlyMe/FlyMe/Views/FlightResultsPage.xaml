@@ -5,6 +5,7 @@
     xmlns:vm="clr-namespace:FlyMe.ViewModels"
     xmlns:views="clr-namespace:FlyMe.Views"
     BackgroundColor="#D8D8D8"
+    Title="{Binding DisplayDate}"
     x:Class="FlyMe.Views.FlightResultsPage">
 
     <ContentPage.BindingContext>
@@ -22,25 +23,25 @@
             RemainingItemsThreshold="2"
             RemainingItemsThresholdReachedCommand="{Binding LoadMoreFlightsCommand}"
             VerticalScrollBarVisibility="Always"
-            Margin="15">
+            Margin="0">
             
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout
-                    ItemSpacing="20"
+                    ItemSpacing="00" 
                     Orientation="Vertical"/>
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <views:ResultViewB>
-                        <views:ResultViewB.GestureRecognizers>
+                    <views:ResultPhotoView>
+                        <views:ResultPhotoView.GestureRecognizers>
                             <TapGestureRecognizer
                                 Command="{Binding 
                                     Source={RelativeSource 
                                     AncestorType={x:Type vm:FlightResultsViewModel}}, 
                                         Path=GoToDetailsCommand}"
                                 CommandParameter="{Binding .}"/>
-                        </views:ResultViewB.GestureRecognizers>
-                    </views:ResultViewB>
+                        </views:ResultPhotoView.GestureRecognizers>
+                    </views:ResultPhotoView>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>

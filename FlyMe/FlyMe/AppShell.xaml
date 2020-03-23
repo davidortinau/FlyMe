@@ -30,9 +30,9 @@
 
     <MenuItem Text="Logout" Clicked="MenuItem_Clicked" 
               IconImageSource="{FontImage FontFamily={StaticResource FontAwesome},
-        Glyph={x:Static local:IconFont.DoorOpen}, Color=Black,Size=16
-        }"
-              />
+                Glyph={x:Static local:IconFont.DoorOpen}, Color=Black,Size=16
+                }"
+    />
 
     <Shell.FlyoutHeader>
         <Grid Margin="0"

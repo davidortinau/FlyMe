@@ -4,10 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:FlyMe"
+             xmlns:vm="clr-namespace:FlyMe.ViewModels"
              mc:Ignorable="d"
              Title="Today"
              x:Class="FlyMe.Views.TodayPage">
 
+    <ContentPage.BindingContext>
+        <vm:TodayViewModel/>
+    </ContentPage.BindingContext>
+    
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label">
@@ -20,7 +25,8 @@
     
     <CollectionView>
         <CollectionView.EmptyView>
-            <FlexLayout Direction="Column" JustifyContent="Center">
+            <FlexLayout Direction="Column" JustifyContent="Center" 
+                        Padding="20,0">
                 <Image Margin="0,0,0,10">
                     <Image.Source>
                         <FontImageSource
@@ -31,19 +37,37 @@
                             />
                     </Image.Source>
                 </Image>
-                <Label Text="You don't have any trips planned." 
+                <Label Text="Stay Home! Until:" 
+                       TextColor="{StaticResource PrimaryColor}"
+                       HorizontalTextAlignment="Center"
+                       FontSize="32"/>
+                <DatePicker Margin="20" Date="{Binding HomeUntilDate}" />
+                <Button Text="Find a Destination" 
+                        Command="{Binding FindLocationsCommand}"
+                        class="actionButton"/>
+                <!--<Label Text="You don't have any trips planned." 
                        HorizontalTextAlignment="Center"/>
                 <Label HorizontalTextAlignment="Center">
                     <Label.FormattedText>
                         <FormattedString>
                             <Span TextColor="DarkBlue"
-                                  Text="Book a Trip"/>
+                                  Text="Book a Trip">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
                             <Span Text=" or "/>
                             <Span TextColor="DarkBlue"
-                                  Text="Find a Trip."/>
+                                  Text="Find a Trip.">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
                         </FormattedString>
                     </Label.FormattedText>
-                </Label>
+                </Label>-->
             </FlexLayout>
         </CollectionView.EmptyView>
     </CollectionView>

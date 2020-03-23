@@ -8,6 +8,7 @@ using Xamarin.Forms.StyleSheets;
 
 namespace FlyMe.common
 {
+    // https://gist.github.com/bbenetskyy/4d24db438ecde48a2b359e5449ffbc51
     public static class StyleSheetRegistrar
     {
         public static void RegisterStyle(string name, Type targetType, string bindablePropertyName)
