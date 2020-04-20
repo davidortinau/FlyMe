@@ -1,4 +1,5 @@
-﻿using FlyMe.common;
+﻿using System.Diagnostics;
+using FlyMe.common;
 using Xamarin.Forms;
 
 namespace FlyMe
@@ -13,11 +14,26 @@ namespace FlyMe
             StyleSheetRegistrar.RegisterStyle("-xf-horizontal-options", typeof(VisualElement), nameof(View.HorizontalOptionsProperty));
             StyleSheetRegistrar.RegisterStyle("-xf-shell-navbarhasshadow", typeof(Shell), nameof(Shell.NavBarHasShadowProperty));
 
-            Device.SetFlags(new[] { "CarouselView_Experimental", "IndicatorView_Experimental" } );
+            Device.SetFlags(new[] {
+                "CarouselView_Experimental",
+                "IndicatorView_Experimental",
+                "RadioButton_Experimental",
+                "AppTheme_Experimental",
+                "Markup_Experimental",
+                "Expander_Experimental"
+            } );
 
             InitializeComponent();
 
             MainPage = new AppShell();
+
+            this.RequestedThemeChanged += App_RequestedThemeChanged;
+        }
+
+        private void App_RequestedThemeChanged(object sender, AppThemeChangedEventArgs e)
+        {
+            Debug.WriteLine($"Requested: {e.RequestedTheme}");
+            
         }
 
         protected override void OnStart()

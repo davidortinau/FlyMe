@@ -44,5 +44,10 @@ namespace FlyMe.Views
             await Shell.Current.GoToAsync("///home");
             Shell.SetFlyoutBehavior(Shell.Current, FlyoutBehavior.Flyout);
         }
+
+        void ImageButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+                    
+        }
     }
 }

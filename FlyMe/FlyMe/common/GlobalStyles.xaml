@@ -4,13 +4,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!-- Fonts -->
-    <OnPlatform x:Key="FontAwesome"
-                x:TypeArguments="x:String">
-        <On Platform="Android" Value="fa-solid-900.ttf#Font Awesome 5 Free"/>
-        <On Platform="iOS" Value="Font Awesome 5 Free"/>
-        <On Platform="UWP" Value="Assets/Fonts/fa-solid-900.ttf#Font Awesome 5 Free"/>
-    </OnPlatform>
-
+    <OnPlatform x:Key="FontAwesome" Default="fa-solid-900.ttf"
+                x:TypeArguments="x:String"/>
+    
     <!-- Colors -->
     <Color x:Key="PrimaryColor">#5561F9</Color>
     <Color x:Key="TextOnLightColor">#1d1d1d</Color>
@@ -56,5 +52,11 @@
                      FontFamily="{StaticResource FontAwesome}"
                      Glyph="{x:Static local:IconFont.Search}"
                      Size="18"
+                     Color="White" />
+
+    <FontImageSource x:Key="IconTodaySm"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.CalendarDay}"
+                     Size="14"
                      Color="White" />
 </ResourceDictionary>

@@ -29,14 +29,17 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout VerticalOptions="Center" Margin="30,0">
-            <Image Source="{FontImage 
+            <ImageButton Source="{FontImage 
                                 FontFamily={StaticResource FontAwesome}, 
                                 Glyph={x:Static local:IconFont.PaperPlane}, 
                                 Color=White,
                                 Size=64}"
                    HorizontalOptions="Center"
-                   Margin="0,0,0,100"/>
-            <Entry Placeholder="Username"/>
+                         BackgroundColor="Transparent"
+                   Margin="0,0,0,100"
+                         Clicked="ImageButton_Clicked"
+                         />
+            <Entry Placeholder="Username" />
             <Entry Placeholder="Password" IsPassword="True"/>
                 <Button Text="Login" Clicked="Button_Clicked" BackgroundColor="OrangeRed" />
             <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="Center">

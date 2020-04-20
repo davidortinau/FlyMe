@@ -23,6 +23,10 @@ namespace FlyMe.ViewModels
                               CultureInfo.InvariantCulture,
                               DateTimeStyles.AdjustToUniversal);
             }
+            get
+            {
+                return string.Empty;
+            }
         }
         public DateTime FromDate { get; set; }
 
@@ -41,9 +45,10 @@ namespace FlyMe.ViewModels
             InitData();
         }
 
-        private void GoToDetails(Flight obj)
+        private async void GoToDetails(Flight obj)
         {
-            Shell.Current.DisplayAlert("You Deserve It", $"So, you wanna go from {obj.From} to Hawaii, eh?", "Book It!");
+            await Shell.Current.DisplayAlert("You Deserve It", $"So, you wanna go from {obj.From} to Hawaii, eh?", "Book It!");
+            await Shell.Current.GoToAsync("..");
         }
 
         int batchSize = 20;
