@@ -8,39 +8,197 @@
     Visual="Material"
     x:Class="FlyMe.AppShell">
 
-    <ShellItem Route="login">
-        <ShellContent ContentTemplate="{DataTemplate views:LoginPage}"/>
+    <Shell.Resources>
+
+        <!-- Create a style for the Label that's part of the flyout template-->
+        <Style
+            TargetType="Label"
+            Class="FlyoutItemLabelStyle">
+            
+            <Setter
+                Property="FontSize"
+                Value="18" />
+            <Setter
+                Property="HeightRequest"
+                Value="44" />
+            <Setter
+                Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup
+                        x:Name="CommonStates">
+                        <VisualState
+                            x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter
+                Property="TextColor"
+                Value="{StaticResource TextOnLightColor}" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                            x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter
+                                    Property="TextColor"
+                                    Value="{StaticResource TextOnDarkColor}" />
+
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                            x:Name="Disabled">
+                            <VisualState.Setters>
+                                <Setter
+                                    Property="BackgroundColor"
+                                    Value="{StaticResource ColorTabIcon}" />
+
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+        <Style
+            TargetType="Layout"
+            ApplyToDerivedTypes="True"
+            Class="FlyoutItemGridStyle">
+            <Setter
+                Property="HeightRequest"
+                Value="44" />
+            <Setter
+                Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup
+                        x:Name="CommonStates">
+                        <VisualState
+                            x:Name="Normal">
+                            <VisualState.Setters>
+
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                            x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter
+                                    Property="BackgroundColor"
+                                    Value="#33FF3300" />
+
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                            x:Name="Disabled">
+                            <VisualState.Setters>
+                                <Setter
+                                    Property="BackgroundColor"
+                                    Value="{StaticResource ColorTabIcon}" />
+
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+        <!--<Style TargetType="Image"
+               Class="FlyoutItemImageStyle">
+            <Setter Property="BackgroundColor" Value="AliceBlue"/>
+            <Setter
+                Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup
+                        x:Name="CommonStates">
+                        <VisualState
+                            x:Name="Normal">
+                            <VisualState.Setters>
+                                <Setter Property="Source" Value="{StaticResource IconTabBook}"/>
+
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                            x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter Property="Source" Value="{StaticResource IconTabBookSelected}"/>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                            x:Name="Disabled">
+                            <VisualState.Setters>
+                                <Setter
+                                    Property="BackgroundColor"
+                                    Value="{StaticResource ColorTabIcon}" />
+
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>-->
+
+        <!-- Set the height of a different flyout container -->
+        <Style
+            TargetType="Layout"
+            ApplyToDerivedTypes="True"
+            Class="FlyoutGridClass2">
+            <Setter
+                Property="HeightRequest"
+                Value="50" />
+            <Setter
+                Property="BackgroundColor"
+                Value="Blue" />
+        </Style>
+    </Shell.Resources>
+
+    <ShellItem
+        Route="login">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:LoginPage}" />
     </ShellItem>
 
-    <FlyoutItem Route="home" Title="My Flights" Icon="{StaticResource IconTabMyFlights}">
-        <ShellContent ContentTemplate="{DataTemplate views:MyFlightsPage}"/>
+    <FlyoutItem
+        Route="home"
+        Title="My Flights"
+        Icon="{StaticResource IconTabMyFlights}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:MyFlightsPage}" />
     </FlyoutItem>
 
-    <FlyoutItem Title="Today" Icon="{StaticResource IconTabToday}">
-        <ShellContent ContentTemplate="{DataTemplate views:TodayPage}"/>
-    </FlyoutItem>
-    
-    <FlyoutItem Title="Book" Route="book" Icon="{StaticResource IconTabBook}">
-        <ShellContent ContentTemplate="{DataTemplate views:BookingPage}"/>
-    </FlyoutItem>
-    
-    <FlyoutItem Title="Notifications" Icon="{StaticResource IconTabNotifications}">
-        <ShellContent ContentTemplate="{DataTemplate views:NotificationsPage}"/>
+    <FlyoutItem
+        Title="Today"
+        Icon="{StaticResource IconTabToday}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:TodayPage}" />
     </FlyoutItem>
 
-    <MenuItem Text="Logout" Clicked="MenuItem_Clicked" 
-              IconImageSource="{FontImage FontFamily={StaticResource FontAwesome},
+    <FlyoutItem
+        Title="Book"
+        Route="book"
+        Icon="{StaticResource IconTabBook}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:BookingPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Notifications"
+        Icon="{StaticResource IconTabNotifications}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:NotificationsPage}" />
+    </FlyoutItem>
+
+    <MenuItem
+        Text="Logout"
+        Clicked="MenuItem_Clicked"
+        IconImageSource="{FontImage FontFamily={StaticResource FontAwesome},
                 Glyph={x:Static local:IconFont.DoorOpen}, Color=Black,Size=16
-                }"
-    />
+                }" />
 
     <Shell.FlyoutHeader>
-        <Grid Margin="0"
-              BackgroundColor="#5561F9"
-              >
+        <Grid
+            Margin="0"
+            BackgroundColor="#5561F9">
             <Grid.RowDefinitions>
-                <RowDefinition Height="{OnPlatform iOS=66, Default=0}"/>
-                <RowDefinition Height="120"/>
+                <RowDefinition
+                    Height="{OnPlatform iOS=66, Default=0}" />
+                <RowDefinition
+                    Height="120" />
             </Grid.RowDefinitions>
 
             <Image
@@ -49,11 +207,10 @@
                 HorizontalOptions="Center">
                 <Image.Source>
                     <FontImageSource
-                    Glyph="{x:Static local:IconFont.PaperPlane}"
-                    FontFamily="{StaticResource FontAwesome}"
-                    Size="32"
-                    Color="GhostWhite"
-                    />
+                        Glyph="{x:Static local:IconFont.PaperPlane}"
+                        FontFamily="{StaticResource FontAwesome}"
+                        Size="32"
+                        Color="GhostWhite" />
 
                 </Image.Source>
             </Image>
@@ -76,5 +233,5 @@
         </Tab>
     </TabBar>-->
 
-    
+
 </Shell>

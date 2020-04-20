@@ -13,17 +13,26 @@
 
     <!-- Colors -->
     <Color x:Key="PrimaryColor">#5561F9</Color>
+    <Color x:Key="TextOnLightColor">#1d1d1d</Color>
+    <Color x:Key="TextOnDarkColor">#FFFFFF</Color>
     <Color x:Key="ColorTabIcon">Gray</Color>
+    <Color x:Key="ColorTabSelectedIcon">Red</Color>
     
     <!-- Sizes -->
     <x:Double x:Key="SizeTabIcon">24</x:Double>
 
     <!-- Icons -->
-    <FontImageSource x:Key="IconTabBook"
+    <FontImageSource x:Key="IconTabBook" 
                      FontFamily="{StaticResource FontAwesome}"
                      Glyph="{x:Static local:IconFont.TicketAlt}"
                      Size="{StaticResource SizeTabIcon}"
                      Color="{StaticResource ColorTabIcon}" />
+
+    <FontImageSource x:Key="IconTabBookSelected" 
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.TicketAlt}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabSelectedIcon}" />
 
     <FontImageSource x:Key="IconTabMyFlights"
                      FontFamily="{StaticResource FontAwesome}"

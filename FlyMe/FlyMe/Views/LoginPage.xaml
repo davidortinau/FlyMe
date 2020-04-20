@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:FlyMe"
              mc:Ignorable="d"
+             Visual="Material"
              Shell.NavBarIsVisible="False"
              BackgroundColor="{StaticResource PrimaryColor}"
              x:Class="FlyMe.Views.LoginPage">

@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyMe.Android", "FlyMe\FlyM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyMe.iOS", "FlyMe\FlyMe.iOS\FlyMe.iOS.csproj", "{CD453E99-9D74-4CC3-B661-EDC2D86F0439}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyMe", "FlyMe\FlyMe\FlyMe.csproj", "{3ED26151-0828-4F80-8B66-74869817A097}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyMe", "FlyMe\FlyMe\FlyMe.csproj", "{3ED26151-0828-4F80-8B66-74869817A097}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
