@@ -14,47 +14,16 @@
         <Style
             TargetType="Label"
             Class="FlyoutItemLabelStyle">
-            
+
             <Setter
                 Property="FontSize"
-                Value="18" />
+                Value="16" />
+            <Setter
+                Property="TextColor"
+                Value="{StaticResource TextOnLightColor}" />
             <Setter
                 Property="HeightRequest"
                 Value="44" />
-            <Setter
-                Property="VisualStateManager.VisualStateGroups">
-                <VisualStateGroupList>
-                    <VisualStateGroup
-                        x:Name="CommonStates">
-                        <VisualState
-                            x:Name="Normal">
-                            <VisualState.Setters>
-                                <Setter
-                Property="TextColor"
-                Value="{StaticResource TextOnLightColor}" />
-                            </VisualState.Setters>
-                        </VisualState>
-                        <VisualState
-                            x:Name="Selected">
-                            <VisualState.Setters>
-                                <Setter
-                                    Property="TextColor"
-                                    Value="{StaticResource TextOnDarkColor}" />
-
-                            </VisualState.Setters>
-                        </VisualState>
-                        <VisualState
-                            x:Name="Disabled">
-                            <VisualState.Setters>
-                                <Setter
-                                    Property="BackgroundColor"
-                                    Value="{StaticResource ColorTabIcon}" />
-
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateGroupList>
-            </Setter>
         </Style>
 
         <Style
@@ -135,6 +104,13 @@
         Icon="{StaticResource IconTabNotifications}">
         <ShellContent
             ContentTemplate="{DataTemplate views:NotificationsPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Track Bags"
+        Icon="{StaticResource IconTabLuggage}">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:BagTrackerPage}" />
     </FlyoutItem>
 
     <MenuItem

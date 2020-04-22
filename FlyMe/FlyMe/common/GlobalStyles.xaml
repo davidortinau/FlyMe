@@ -4,14 +4,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!-- Fonts -->
-    <OnPlatform x:Key="FontAwesome" Default="fa-solid-900.ttf"
+    <OnPlatform x:Key="FontAwesome"
+                    Default="fa-solid-900.ttf"
                 x:TypeArguments="x:String"/>
     
     <!-- Colors -->
     <Color x:Key="PrimaryColor">#5561F9</Color>
     <Color x:Key="TextOnLightColor">#1d1d1d</Color>
     <Color x:Key="TextOnDarkColor">#FFFFFF</Color>
-    <Color x:Key="ColorTabIcon">Gray</Color>
+    <Color x:Key="ColorTabIcon">Black</Color>
     <Color x:Key="ColorTabSelectedIcon">Red</Color>
     
     <!-- Sizes -->
@@ -28,7 +29,7 @@
                      FontFamily="{StaticResource FontAwesome}"
                      Glyph="{x:Static local:IconFont.TicketAlt}"
                      Size="{StaticResource SizeTabIcon}"
-                     Color="{StaticResource ColorTabSelectedIcon}" />
+                     Color="{StaticResource ColorTabIcon}" />
 
     <FontImageSource x:Key="IconTabMyFlights"
                      FontFamily="{StaticResource FontAwesome}"
@@ -53,6 +54,12 @@
                      Glyph="{x:Static local:IconFont.Search}"
                      Size="18"
                      Color="White" />
+
+    <FontImageSource x:Key="IconTabLuggage"
+                     FontFamily="{StaticResource FontAwesome}"
+                     Glyph="{x:Static local:IconFont.SuitcaseRolling}"
+                     Size="{StaticResource SizeTabIcon}"
+                     Color="{StaticResource ColorTabIcon}" />
 
     <FontImageSource x:Key="IconTodaySm"
                      FontFamily="{StaticResource FontAwesome}"
