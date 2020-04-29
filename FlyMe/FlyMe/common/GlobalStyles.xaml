@@ -4,9 +4,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <!-- Fonts -->
-    <OnPlatform x:Key="FontAwesome"
-                    Default="fa-solid-900.ttf"
-                x:TypeArguments="x:String"/>
+<OnPlatform x:Key="FontAwesome"
+            Default="fa-solid-900.ttf"
+            x:TypeArguments="x:String"/>
     
     <!-- Colors -->
     <Color x:Key="PrimaryColor">#5561F9</Color>
@@ -14,16 +14,27 @@
     <Color x:Key="TextOnDarkColor">#FFFFFF</Color>
     <Color x:Key="ColorTabIcon">Black</Color>
     <Color x:Key="ColorTabSelectedIcon">Red</Color>
+
+    <AppThemeColor x:Key="TextColor" Dark="#FFFFFF" Light="#1d1d1d"/>
+    <AppThemeColor x:Key="BackgroundColor" Dark="#1d1d1d" Light="#FFFFFF"/>
+
+    <Style TargetType="Page" ApplyToDerivedTypes="True">
+        <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}"/>
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TextColor}"/>
+    </Style>
     
     <!-- Sizes -->
     <x:Double x:Key="SizeTabIcon">24</x:Double>
 
     <!-- Icons -->
     <FontImageSource x:Key="IconTabBook" 
-                     FontFamily="{StaticResource FontAwesome}"
-                     Glyph="{x:Static local:IconFont.TicketAlt}"
-                     Size="{StaticResource SizeTabIcon}"
-                     Color="{StaticResource ColorTabIcon}" />
+                FontFamily="{StaticResource FontAwesome}"
+                Glyph="{x:Static local:IconFont.TicketAlt}"
+                Size="{StaticResource SizeTabIcon}"
+                Color="{StaticResource ColorTabIcon}" />
 
     <FontImageSource x:Key="IconTabBookSelected" 
                      FontFamily="{StaticResource FontAwesome}"
@@ -66,4 +77,71 @@
                      Glyph="{x:Static local:IconFont.CalendarDay}"
                      Size="14"
                      Color="White" />
+
+    <!-- Shell -->
+    <Style x:Key="BaseStyle"
+           TargetType="Element">
+        <Setter Property="Shell.BackgroundColor"
+                Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="Shell.ForegroundColor"
+                Value="{DynamicResource BackgroundColor}" />
+        <Setter Property="Shell.TitleColor"
+                Value="{DynamicResource BackgroundColor}" />
+        <Setter Property="Shell.DisabledColor"
+                Value="#B4FFFFFF" />
+        <Setter Property="Shell.UnselectedColor"
+                Value="#CC0000" />
+        <Setter Property="Shell.NavBarHasShadow"
+                Value="False"/>
+    </Style>
+
+    <Style BasedOn="{StaticResource BaseStyle}"
+           ApplyToDerivedTypes="True"
+           TargetType="FlyoutItem" />
+
+    <Style
+            TargetType="Layout"
+            ApplyToDerivedTypes="True"
+            Class="FlyoutItemLayoutStyle">
+            <Setter
+                Property="HeightRequest"
+                Value="44" />
+            <Setter
+                TargetName="FlyoutItemLabel"
+                Property="Label.FontSize"
+                Value="16" />
+            <Setter
+                TargetName="FlyoutItemLabel"
+                Property="Label.TextColor"
+                Value="{StaticResource TextOnLightColor}" />
+            <Setter
+                TargetName="FlyoutItemLabel"
+                Property="Label.HeightRequest"
+                Value="44" />
+            <Setter
+                Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup
+                        x:Name="CommonStates">
+                        <VisualState
+                            x:Name="Normal">
+                            <VisualState.Setters>
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState
+                            x:Name="Selected">
+                            <VisualState.Setters>
+                                <Setter
+                                    Property="BackgroundColor"
+                                    Value="#FF3300" />
+                                <Setter
+                                    TargetName="FlyoutItemLabel"
+                                    Property="Label.TextColor"
+                                    Value="White" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
 </ResourceDictionary>

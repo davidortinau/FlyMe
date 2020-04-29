@@ -14,14 +14,14 @@ namespace FlyMe
             StyleSheetRegistrar.RegisterStyle("-xf-horizontal-options", typeof(VisualElement), nameof(View.HorizontalOptionsProperty));
             StyleSheetRegistrar.RegisterStyle("-xf-shell-navbarhasshadow", typeof(Shell), nameof(Shell.NavBarHasShadowProperty));
 
-            Device.SetFlags(new[] {
-                "CarouselView_Experimental",
-                "IndicatorView_Experimental",
-                "RadioButton_Experimental",
-                "AppTheme_Experimental",
-                "Markup_Experimental",
-                "Expander_Experimental"
-            } );
+Device.SetFlags(new[] {
+    "CarouselView_Experimental",
+    "IndicatorView_Experimental",
+    "RadioButton_Experimental",
+    "AppTheme_Experimental",
+    "Markup_Experimental",
+    "Expander_Experimental"
+} );
 
             InitializeComponent();
 

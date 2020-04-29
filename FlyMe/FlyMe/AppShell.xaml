@@ -8,65 +8,7 @@
     Visual="Material"
     x:Class="FlyMe.AppShell">
 
-    <Shell.Resources>
 
-        <!-- Create a style for the Label that's part of the flyout template-->
-        <Style
-            TargetType="Label"
-            Class="FlyoutItemLabelStyle">
-
-            <Setter
-                Property="FontSize"
-                Value="16" />
-            <Setter
-                Property="TextColor"
-                Value="{StaticResource TextOnLightColor}" />
-            <Setter
-                Property="HeightRequest"
-                Value="44" />
-        </Style>
-
-        <Style
-            TargetType="Layout"
-            ApplyToDerivedTypes="True"
-            Class="FlyoutItemGridStyle">
-            <Setter
-                Property="HeightRequest"
-                Value="44" />
-            <Setter
-                Property="VisualStateManager.VisualStateGroups">
-                <VisualStateGroupList>
-                    <VisualStateGroup
-                        x:Name="CommonStates">
-                        <VisualState
-                            x:Name="Normal">
-                            <VisualState.Setters>
-
-                            </VisualState.Setters>
-                        </VisualState>
-                        <VisualState
-                            x:Name="Selected">
-                            <VisualState.Setters>
-                                <Setter
-                                    Property="BackgroundColor"
-                                    Value="#33FF3300" />
-
-                            </VisualState.Setters>
-                        </VisualState>
-                        <VisualState
-                            x:Name="Disabled">
-                            <VisualState.Setters>
-                                <Setter
-                                    Property="BackgroundColor"
-                                    Value="{StaticResource ColorTabIcon}" />
-
-                            </VisualState.Setters>
-                        </VisualState>
-                    </VisualStateGroup>
-                </VisualStateGroupList>
-            </Setter>
-        </Style>
-    </Shell.Resources>
 
     <!-- Initial Login -->
     <ShellItem

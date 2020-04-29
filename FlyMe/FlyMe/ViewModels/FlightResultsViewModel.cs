@@ -34,7 +34,15 @@ namespace FlyMe.ViewModels
         {
             get
             {
-                return $"Free Starting: {FromDate.ToShortDateString()}";
+                if(FromDate > DateTime.MinValue)
+                {
+                    return $"Free Starting: {FromDate.ToShortDateString()}";
+                }
+                else
+                {
+                    return "Results";
+                }
+                
             }
         }
         public FlightResultsViewModel()

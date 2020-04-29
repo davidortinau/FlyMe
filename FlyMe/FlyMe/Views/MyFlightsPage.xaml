@@ -114,56 +114,56 @@
                         </Label.FormattedText>
                     </Label>
 
-                    <Expander FlexLayout.Basis="100%" Margin="0,0,0,10">
-                        <Expander.Header>
-                            <StackLayout Orientation="Horizontal" Margin="0,0,0,6">
-                            <Image Source="{StaticResource IconTodaySm}">
+<Expander FlexLayout.Basis="100%" Margin="0,0,0,10">
+    <Expander.Header>
+        <StackLayout Orientation="Horizontal" Margin="0,0,0,6">
+        <Image Source="{StaticResource IconTodaySm}">
 
-                            </Image>
-                            <Label Text="Next Flight: STL to MAUI (5/19/2020)"
-                                   TextColor="White"
-                                   FontSize="14"/>
-                                </StackLayout>
-                        </Expander.Header>
+        </Image>
+        <Label Text="Next Flight: STL to MAUI (5/19/2020)"
+                TextColor="White"
+                FontSize="14"/>
+            </StackLayout>
+    </Expander.Header>
                         
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="14"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="14"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
 
-                            <BoxView
-                                Grid.RowSpan="6"
-                                WidthRequest="4" BackgroundColor="White"
-                                     VerticalOptions="Fill"
-                                     HorizontalOptions="Center"/>
-                            <Label
-                                Grid.Row="0"
-                                Grid.Column="1"
-                                Text="11:20 AM - Depart STL"/>
-                            <Label
-                                Grid.Row="1"
-                                Grid.Column="1"
-                                Text="4:05 PM - Arrive SFO"/>
-                            <Label
-                                Grid.Row="2"
-                                Grid.Column="1"
-                                Text="4:45 PM - Depart SFO"/>
-                            <Label
-                                Grid.Row="3"
-                                Grid.Column="1"
-                                Text="10:30 PM - Arrive HNL"/>
-                            <Label
-                                Grid.Row="4"
-                                Grid.Column="1"
-                                Text="11:00 PM - Depart HNL"/>
-                            <Label
-                                Grid.Row="5"
-                                Grid.Column="1"
-                                Text="11:45 PM - Arrive OGG"/>
-                        </Grid>
+        <BoxView
+            Grid.RowSpan="6"
+            WidthRequest="4" BackgroundColor="White"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Center"/>
+        <Label
+            Grid.Row="0"
+            Grid.Column="1"
+            Text="11:20 AM - Depart STL"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            Text="4:05 PM - Arrive SFO"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="4:45 PM - Depart SFO"/>
+        <Label
+            Grid.Row="3"
+            Grid.Column="1"
+            Text="10:30 PM - Arrive HNL"/>
+        <Label
+            Grid.Row="4"
+            Grid.Column="1"
+            Text="11:00 PM - Depart HNL"/>
+        <Label
+            Grid.Row="5"
+            Grid.Column="1"
+            Text="11:45 PM - Arrive OGG"/>
+    </Grid>
 
-                    </Expander>
+</Expander>
 
                     <Label
                         Text="MILES&#x0a;AVAILABLE"
