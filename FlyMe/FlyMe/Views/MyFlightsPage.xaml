@@ -7,6 +7,7 @@
     Title=""
     BackgroundColor="#D8D8D8"
     Shell.NavBarIsVisible="True"
+    Shell.FlyoutBehavior="Flyout"
     x:Class="FlyMe.Views.MyFlightsPage">
 
     <Grid

@@ -4,11 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:FlyMe.Views"
     xmlns:local="clr-namespace:FlyMe"
-    Shell.FlyoutBehavior="Disabled"
+    xmlns:vm="clr-namespace:FlyMe.ViewModels"    
+    FlyoutHeaderTemplate="{DataTemplate views:HeaderView}"
     Visual="Material"
     x:Class="FlyMe.AppShell">
 
-    <ShellItem Route="login">
+    <Shell.BindingContext>
+        <vm:AppViewModel/>
+    </Shell.BindingContext>
+
+    <ShellItem Route="login" IsVisible="{Binding IsNotLoggedIn}">
         <ShellContent ContentTemplate="{DataTemplate views:LoginPage}"/>
     </ShellItem>
 
@@ -33,33 +38,6 @@
         Glyph={x:Static local:IconFont.DoorOpen}, Color=Black,Size=16
         }"
               />
-
-    <Shell.FlyoutHeader>
-        <Grid Margin="0"
-              BackgroundColor="#5561F9"
-              >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="{OnPlatform iOS=66, Default=0}"/>
-                <RowDefinition Height="120"/>
-            </Grid.RowDefinitions>
-
-            <Image
-                Grid.RowSpan="2"
-                VerticalOptions="Center"
-                HorizontalOptions="Center">
-                <Image.Source>
-                    <FontImageSource
-                    Glyph="{x:Static local:IconFont.PaperPlane}"
-                    FontFamily="{StaticResource FontAwesome}"
-                    Size="32"
-                    Color="GhostWhite"
-                    />
-
-                </Image.Source>
-            </Image>
-        </Grid>
-    </Shell.FlyoutHeader>
-
 
     <!--<TabBar>
         <Tab Title="My Flights" Icon="{StaticResource IconTabMyFlights}">

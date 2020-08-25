@@ -1,5 +1,6 @@
 ﻿using FlyMe.common;
 using System;
+using TinyMessenger;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,6 +18,8 @@ namespace FlyMe
             InitializeComponent();
 
             Device.SetFlags(new[] { "CarouselView_Experimental", "IndicatorView_Experimental" } );
+
+            DependencyService.Register<TinyMessengerHub>();
 
             MainPage = new AppShell();
         }

@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:FlyMe"
              mc:Ignorable="d"
              Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Disabled"
              BackgroundColor="{StaticResource PrimaryColor}"
              x:Class="FlyMe.Views.LoginPage">
     <ContentPage.Resources>
