@@ -52,7 +52,7 @@ namespace FlyMe.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
+                Xamarin.Forms.Forms.SetFlags("CarouselView_Experimental", "IndicatorView_Experimental", "Shell_UWP_Experimental");
                 Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

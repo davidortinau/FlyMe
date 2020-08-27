@@ -17,7 +17,7 @@ namespace FlyMe
 
             InitializeComponent();
 
-            Device.SetFlags(new[] { "CarouselView_Experimental", "IndicatorView_Experimental" } );
+            //Device.SetFlags(new[] { "CarouselView_Experimental", "IndicatorView_Experimental", "Shell_UWP_Experimental" } );
 
             DependencyService.Register<TinyMessengerHub>();
 

@@ -21,7 +21,7 @@ namespace FlyMe.Views
         {
             base.OnAppearing();
 
-            CheckAuth();
+            //CheckAuth();
         }
 
         private async void CheckAuth()
