@@ -22,12 +22,5 @@ namespace FlyMe.Views
             // GoTo Destinations
             await Shell.Current.GoToAsync("book?from=STL");
         }
-
-void RadioButton_CheckedChanged(object sender, EventArgs e)
-{
-    RadioButton rb = sender as RadioButton;
-    if(rb.IsChecked)
-        Debug.WriteLine($"You chose: {rb.GroupName} : {rb.Text}");
-}
     }
 }

@@ -3,7 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:FlyMe"
-    xmlns:xa="clr-namespace:Xamanimation;assembly=Xamanimation"
+    xmlns:xa="clr-namespace:Xamanimation;assembly=Xamanimation" 
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     Title=""
     Visual="Material"
     BackgroundColor="#D8D8D8"
@@ -114,8 +115,8 @@
                         </Label.FormattedText>
                     </Label>
 
-<Expander FlexLayout.Basis="100%" Margin="0,0,0,10">
-    <Expander.Header>
+<xct:Expander FlexLayout.Basis="100%" Margin="0,0,0,10">
+    <xct:Expander.Header>
         <StackLayout Orientation="Horizontal" Margin="0,0,0,6">
         <Image Source="{StaticResource IconTodaySm}">
 
@@ -124,7 +125,7 @@
                 TextColor="White"
                 FontSize="14"/>
             </StackLayout>
-    </Expander.Header>
+    </xct:Expander.Header>
                         
     <Grid>
         <Grid.ColumnDefinitions>
@@ -163,7 +164,7 @@
             Text="11:45 PM - Arrive OGG"/>
     </Grid>
 
-</Expander>
+</xct:Expander>
 
                     <Label
                         Text="MILES&#x0a;AVAILABLE"

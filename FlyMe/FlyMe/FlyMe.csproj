@@ -13,12 +13,13 @@
   <ItemGroup>
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.1-beta" />
     <PackageReference Include="Xamanimation" Version="1.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.1" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.0-pre6" />
+    <PackageReference Include="Xamarin.CommunityToolkit.Markup" Version="1.0.0-pre6" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1874" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
     <PackageReference Include="Xamarin.Forms.StateSquid" Version="1.1.10-beta" />
-    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.726" />
-    <PackageReference Include="LiveSharp" Version="1.2.5" />
-    <PackageReference Include="Resizetizer.NT" Version="0.1.0" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="5.0.0.1874" />
+    <PackageReference Include="Resizetizer.NT" Version="0.2.0" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="common\fa-solid-900.ttf" />
@@ -48,6 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="common\fa-solid-900.ttf" />
+    <None Remove="Resources\banner_01.jpg" />
+    <None Remove="Resources\banner_02.jpg" />
+    <None Remove="Resources\banner_03.jpg" />
+    <None Remove="Resources\banner_04.jpg" />
+    <None Remove="Resources\banner_05.jpg" />
+    <None Remove="Resources\banner_06.jpg" />
     <None Remove="Resources\beach_1.jpg" />
     <None Remove="Resources\beach_10.jpg" />
     <None Remove="Resources\beach_2.jpg" />
@@ -60,9 +67,12 @@
     <None Remove="Resources\beach_9.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
+    <SharedImage Include="Resources\banner_01.jpg" />
+    <SharedImage Include="Resources\banner_02.jpg" />
+    <SharedImage Include="Resources\banner_03.jpg" />
+    <SharedImage Include="Resources\banner_04.jpg" />
+    <SharedImage Include="Resources\banner_05.jpg" />
+    <SharedImage Include="Resources\banner_06.jpg" />
     <SharedImage Include="Resources\beach_1.jpg">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>

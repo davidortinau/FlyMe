@@ -49,11 +49,6 @@
                         Command="{Binding FindLocationsCommand}"
                         class="actionButton"/>
 
-<StackLayout>
-    <RadioButton GroupName="Size" Text="Small" CheckedChanged="RadioButton_CheckedChanged" />
-    <RadioButton GroupName="Size" Text="Medium" CheckedChanged="RadioButton_CheckedChanged"/>
-    <RadioButton GroupName="Size" Text="Large" CheckedChanged="RadioButton_CheckedChanged"/>
-</StackLayout>
                 <!--<Label Text="You don't have any trips planned." 
                        HorizontalTextAlignment="Center"/>
                 <Label HorizontalTextAlignment="Center">
