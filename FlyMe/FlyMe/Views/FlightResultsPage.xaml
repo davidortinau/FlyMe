@@ -20,7 +20,7 @@
         <CollectionView
             x:Name="cv"
             ItemsSource="{Binding FlightsToDisplay}"
-            RemainingItemsThreshold="2"
+            RemainingItemsThreshold="4"
             RemainingItemsThresholdReachedCommand="{Binding LoadMoreFlightsCommand}"
             VerticalScrollBarVisibility="Always"
             Margin="0">
@@ -32,28 +32,19 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <views:ResultPhotoView>
-                        <views:ResultPhotoView.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Command="{Binding 
-                                    Source={RelativeSource 
-                                    AncestorType={x:Type vm:FlightResultsViewModel}}, 
-                                        Path=GoToDetailsCommand}"
-                                CommandParameter="{Binding .}"/>
-                        </views:ResultPhotoView.GestureRecognizers>
-                    </views:ResultPhotoView>
+                    <views:ResultViewA/>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <ActivityIndicator Color="{StaticResource PrimaryColor}" 
-                           IsRunning="{Binding IsBusy}"
-                           HorizontalOptions="Center"
-                           VerticalOptions="End"
-                           Margin="0,0,0,20"
-                           InputTransparent="True"
-                           />
-        
+        <ActivityIndicator
+            Color="{StaticResource PrimaryColor}"
+            IsRunning="{Binding IsBusy}"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="0,0,0,20"
+            InputTransparent="True"/>
+
     </Grid>
 
 </ContentPage>

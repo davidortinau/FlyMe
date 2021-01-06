@@ -8,8 +8,6 @@
     Visual="Material"
     x:Class="FlyMe.AppShell">
 
-
-
     <!-- Initial Login -->
     <ShellItem
         Route="login">

@@ -15,15 +15,12 @@
     <Color x:Key="ColorTabIcon">Black</Color>
     <Color x:Key="ColorTabSelectedIcon">Red</Color>
 
-    <AppThemeColor x:Key="TextColor" Dark="#FFFFFF" Light="#1d1d1d"/>
-    <AppThemeColor x:Key="BackgroundColor" Dark="#1d1d1d" Light="#FFFFFF"/>
-
     <Style TargetType="Page" ApplyToDerivedTypes="True">
-        <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}"/>
+        <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark=#1d1d1d, Light=#FFFFFF}"/>
     </Style>
 
     <Style TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource TextColor}"/>
+        <Setter Property="TextColor" Value="{AppThemeBinding Dark=#FFFFFF, Light=#1d1d1d}"/>
     </Style>
     
     <!-- Sizes -->
@@ -84,9 +81,9 @@
         <Setter Property="Shell.BackgroundColor"
                 Value="{DynamicResource PrimaryColor}" />
         <Setter Property="Shell.ForegroundColor"
-                Value="{DynamicResource BackgroundColor}" />
+                Value="{AppThemeBinding Dark=#1d1d1d, Light=#FFFFFF}" />
         <Setter Property="Shell.TitleColor"
-                Value="{DynamicResource BackgroundColor}" />
+                Value="{AppThemeBinding Light=#1d1d1d, Dark=#FFFFFF}" />
         <Setter Property="Shell.DisabledColor"
                 Value="#B4FFFFFF" />
         <Setter Property="Shell.UnselectedColor"

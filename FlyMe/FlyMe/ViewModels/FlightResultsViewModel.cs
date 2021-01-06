@@ -12,14 +12,15 @@ namespace FlyMe.ViewModels
     [QueryProperty(nameof(FromDateIn), "start")]
     public class FlightResultsViewModel : BaseViewModel
     {
-        public Command LoadMoreFlightsCommand { get; set; }
         public Command GoToDetailsCommand { get; set; }
+
+        public Command LoadMoreFlightsCommand { get; set; }
 
         public string FromDateIn
         {
             set
             {
-                FromDate = DateTime.ParseExact(value, "yyyyMMddHHmmss", 
+                FromDate = DateTime.ParseExact(value, "yyyyMMddHHmmss",
                               CultureInfo.InvariantCulture,
                               DateTimeStyles.AdjustToUniversal);
             }
@@ -34,7 +35,7 @@ namespace FlyMe.ViewModels
         {
             get
             {
-                if(FromDate > DateTime.MinValue)
+                if (FromDate > DateTime.MinValue)
                 {
                     return $"Free Starting: {FromDate.ToShortDateString()}";
                 }
@@ -42,15 +43,32 @@ namespace FlyMe.ViewModels
                 {
                     return "Results";
                 }
-                
+
             }
         }
         public FlightResultsViewModel()
         {
-            LoadMoreFlightsCommand = new Command(LoadMore);
             GoToDetailsCommand = new Command<Flight>(GoToDetails);
+            LoadMoreFlightsCommand = new Command(LoadMoreAsync);
 
             InitData();
+        }
+
+        private async void LoadMoreAsync()
+        {
+            if (IsBusy)
+                return;
+
+            IsBusy = true;
+
+            await Task.Delay(1000); // Fake and API call delay
+
+            FlightsToDisplay.AddRange(
+                Flights.Skip(batchSize * currentFlightIndex).Take(batchSize)
+            );
+            currentFlightIndex += batchSize;
+
+            IsBusy = false;
         }
 
         private async void GoToDetails(Flight obj)
@@ -59,41 +77,11 @@ namespace FlyMe.ViewModels
             await Shell.Current.GoToAsync("..");
         }
 
-        int batchSize = 20;
-        int currentFlightIndex = 0;
-
-        async void LoadMore()
-        {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-
-            await Task.Delay(1000);// fake delay to see the activity
-
-            FlightsToDisplay.AddRange(
-                Flights.Skip(batchSize * currentFlightIndex).Take(batchSize)
-            );
-            currentFlightIndex += batchSize;
-
-
-            IsBusy = false;
-
-            Debug.WriteLine($"You now have: {FlightsToDisplay.Count}");
-        }
-
-        public ObservableRangeCollection<Flight> FlightsToDisplay
-        {
-            get => flightsToDisplay; 
-            set
-            {
-                SetProperty(ref flightsToDisplay, value);
-            }
-        }
-
         public List<Flight> Flights { get; set; }
 
         public List<Flight> FlightsEmpty { get; set; } = new List<Flight>();
+        public ObservableRangeCollection<Flight> FlightsToDisplay { get => flightsToDisplay;
+            set => SetProperty(ref flightsToDisplay, value); }
 
         Random random = new Random();
 
@@ -145,6 +133,8 @@ namespace FlyMe.ViewModels
             "$500", "$1,200", "$350", "$750", "$1,250", "$200"
         };
         private ObservableRangeCollection<Flight> flightsToDisplay;
+        private int batchSize = 20;
+        private int currentFlightIndex = 0;
     }
 
     public class Flight
