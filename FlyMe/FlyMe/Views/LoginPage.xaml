@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
     xmlns:local="clr-namespace:FlyMe"
     mc:Ignorable="d"
     Visual="Material"
@@ -11,22 +12,25 @@
     BackgroundColor="{StaticResource PrimaryColor}"
     x:Class="FlyMe.Views.LoginPage">
     <ContentPage.Resources>
-        <StyleSheet>
-            <![CDATA[
-            
-            Entry {
-                background-color: white;
-            }
-            
-            Button {
-                height: 66;
-                font-size: 18;
-                -xf-horizontal-options: Fill;  
-            }
-            
-            
-            ]]>
-        </StyleSheet>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light=White, Dark=#999999}"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="HeightRequest" Value="66"/>
+            <Setter Property="BackgroundColor"
+                    Value="{AppThemeBinding Light=OrangeRed, Dark=#FF3300}"/>
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light=White, Dark=#333333}"/>
+        </Style>
+        <Style TargetType="CheckBox">
+            <Setter Property="Color"
+                    Value="{AppThemeBinding Light=White, Dark=#333333}"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="{AppThemeBinding Light=White, Dark=#333333}"/>
+        </Style>
     </ContentPage.Resources>
     <ContentPage.Content>
         <ScrollView>
@@ -42,7 +46,10 @@
                     HorizontalOptions="Center"
                     BackgroundColor="Transparent"
                     Margin="0,0,0,100"
-                    Clicked="ImageButton_Clicked" />
+                    xct:IconTintColorEffect.TintColor="
+                        {AppThemeBinding Light=White, Dark=#333333}
+                    "
+                    Clicked="ImageButton_Clicked"/>
                 <Entry
                     Placeholder="Username" />
                 <Entry
@@ -50,19 +57,16 @@
                     IsPassword="True" />
                 <Button
                     Text="Login"
-                    Clicked="Button_Clicked"
-                    BackgroundColor="OrangeRed" />
+                    Clicked="Button_Clicked" />
                 <StackLayout
                     Orientation="Horizontal"
                     Spacing="0"
                     HorizontalOptions="Center">
                     <CheckBox
                         x:Name="RememberCheck"
-                        VerticalOptions="Center"
-                        Color="White" />
+                        VerticalOptions="Center"/>
                     <Label
                         Text="Remember Me"
-                        TextColor="White"
                         VerticalTextAlignment="Center" />
                 </StackLayout>
             </StackLayout>
