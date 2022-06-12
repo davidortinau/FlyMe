@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:FlyMe.ViewModels"
+    xmlns:views="clr-namespace:FlyMe.Views"
+    BackgroundColor="#D8D8D8"
+    Title="{Binding DisplayDate}"
+    x:Class="FlyMe.Views.FlightResultsPage">
+
+    <ContentPage.BindingContext>
+        <vm:FlightResultsViewModel x:Name="vm" />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <CollectionView
+            x:Name="cv"
+            ItemsSource="{Binding FlightsToDisplay}"
+            RemainingItemsThreshold="4"
+            RemainingItemsThresholdReachedCommand="{Binding LoadMoreFlightsCommand}"
+            VerticalScrollBarVisibility="Always"
+            Margin="0">
+            
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout
+                    ItemSpacing="00" 
+                    Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <views:ResultViewA/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <ActivityIndicator
+            Color="{StaticResource PrimaryColor}"
+            IsRunning="{Binding IsBusy}"
+            HorizontalOptions="Center"
+            VerticalOptions="End"
+            Margin="0,0,0,20"
+            InputTransparent="True"/>
+
+    </Grid>
+
+</ContentPage>

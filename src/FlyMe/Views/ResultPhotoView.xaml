@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FlyMe.Views.ResultPhotoView">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+        </Grid.RowDefinitions>
+        <Image 
+            Source="{Binding PhotoUrl}"
+               Aspect="AspectFill"/>
+        <BoxView BackgroundColor="Black" Opacity="0.3"/>
+        <Label 
+            VerticalOptions="End"
+            HorizontalOptions="Start"
+            Margin="15"
+            FontSize="24"
+            FontAttributes="Bold"
+            TextColor="White"
+            Text="{Binding LocationName}" />
+    </Grid>
+</ContentView>

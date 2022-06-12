@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:FlyMe"
+             xmlns:vm="clr-namespace:FlyMe.ViewModels"
+             mc:Ignorable="d"
+             Title="Today"
+             x:Class="FlyMe.Views.TodayPage">
+
+    <ContentPage.BindingContext>
+        <vm:TodayViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="Margin" Value="0,8"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <CollectionView>
+        <CollectionView.EmptyView>
+            <FlexLayout Direction="Column" JustifyContent="Center" 
+                        Margin="20,0">
+                <Image Margin="0,0,0,10">
+                    <Image.Source>
+                        <FontImageSource
+                            FontFamily="{StaticResource FontAwesome}"
+                            Glyph="{x:Static local:IconFont.CalendarTimes}"
+                            Color="{StaticResource PrimaryColor}"
+                            Size="64"
+                            />
+                    </Image.Source>
+                </Image>
+                <Label Text="Stay Home! Until:" 
+                       TextColor="{StaticResource PrimaryColor}"
+                       HorizontalTextAlignment="Center"
+                       FontSize="32"/>
+                <DatePicker Margin="20" Date="{Binding HomeUntilDate}"
+                            TextColor="{DynamicResource TextColor}"/>
+                <Button Text="Find a Destination" 
+                        Command="{Binding FindLocationsCommand}"
+                        class="actionButton"/>
+
+
+                <!--<Label Text="You don't have any trips planned." 
+                       HorizontalTextAlignment="Center"/>
+                <Label HorizontalTextAlignment="Center">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span TextColor="DarkBlue"
+                                  Text="Book a Trip">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                            <Span Text=" or "/>
+                            <Span TextColor="DarkBlue"
+                                  Text="Find a Trip.">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>-->
+            </FlexLayout>
+        </CollectionView.EmptyView>
+    </CollectionView>
+</ContentPage>
