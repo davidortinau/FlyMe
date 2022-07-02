@@ -3,8 +3,13 @@
                     xmlns:local="clr-namespace:FlyMe"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
+    <!-- XF Defaults -->
+    <Style TargetType="StackLayout">
+        <Setter Property="Spacing" Value="8"/>
+    </Style>
+
     <!-- Fonts -->
-<OnPlatform x:Key="FontAwesome"
+    <OnPlatform x:Key="FontAwesome"
             Default="fa-solid-900.ttf"
             x:TypeArguments="x:String"/>
     
@@ -83,7 +88,7 @@
         <Setter Property="Shell.ForegroundColor"
                 Value="{AppThemeBinding Dark=#1d1d1d, Light=#FFFFFF}" />
         <Setter Property="Shell.TitleColor"
-                Value="{AppThemeBinding Light=#1d1d1d, Dark=#FFFFFF}" />
+                Value="{AppThemeBinding Light=#FFFFFF, Dark=#FFFFFF}" />
         <Setter Property="Shell.DisabledColor"
                 Value="#B4FFFFFF" />
         <Setter Property="Shell.UnselectedColor"
@@ -123,6 +128,9 @@
                         <VisualState
                             x:Name="Normal">
                             <VisualState.Setters>
+                                <Setter
+                                    Property="BackgroundColor"
+                                    Value="Transparent" />
                             </VisualState.Setters>
                         </VisualState>
                         <VisualState

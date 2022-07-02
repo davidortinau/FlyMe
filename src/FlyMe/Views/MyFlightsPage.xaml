@@ -106,7 +106,7 @@
                         </Label.FormattedText>
                     </Label>
 
-    <StackLayout >
+    <StackLayout>
         <StackLayout Orientation="Horizontal" Margin="0,0,0,6">
             <Image Source="{StaticResource IconTodaySm}">
 
@@ -116,15 +116,11 @@
                 FontSize="14"/>
         </StackLayout>
                         
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="14"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
+        <Grid ColumnDefinitions="14,*" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
+            
             <BoxView
                 Grid.RowSpan="6"
-                WidthRequest="4" BackgroundColor="White"
+                WidthRequest="4" Color="White"
                         VerticalOptions="Fill"
                         HorizontalOptions="Center"/>
             <Label
@@ -180,12 +176,12 @@
                         </Grid.RowDefinitions>
 
                         <BoxView
-                            BackgroundColor="DarkBlue"
+                            Color="DarkBlue"
                             CornerRadius="15" />
 
                         <BoxView
                             x:Name="MilesProgressBar"
-                            BackgroundColor="SteelBlue"
+                            Color="SteelBlue"
                             WidthRequest="0"
                             HorizontalOptions="Start"
                             CornerRadius="15" />
@@ -219,12 +215,12 @@
                         </Grid.RowDefinitions>
 
                         <BoxView
-                            BackgroundColor="DarkBlue"
+                            Color="DarkBlue"
                             CornerRadius="15" />
 
                         <BoxView
                             x:Name="SegmentsProgressBar"
-                            BackgroundColor="SteelBlue"
+                            Color="SteelBlue"
                             WidthRequest="0"
                             HorizontalOptions="Start"
                             CornerRadius="15" />
@@ -265,11 +261,11 @@
                         </Grid.RowDefinitions>
 
                         <BoxView
-                            BackgroundColor="DarkBlue"
+                            Color="DarkBlue"
                             CornerRadius="15" />
 
                         <BoxView
-                            BackgroundColor="SteelBlue"
+                            Color="SteelBlue"
                             WidthRequest="300"
                             HorizontalOptions="Start"
                             CornerRadius="15" />
@@ -303,7 +299,7 @@
                         </Grid.RowDefinitions>
 
                         <BoxView
-                            BackgroundColor="DarkBlue"
+                            Color="DarkBlue"
                             CornerRadius="15" />
 
                         <Label
@@ -327,14 +323,14 @@
                     </Grid>
 
                 </FlexLayout>
-
+                <Grid BackgroundColor="#D8D8D8" Padding="15"
+                      Margin="0,0,0,100">
                 <FlexLayout
-                    BackgroundColor="#D8D8D8"
-                    VerticalOptions="FillAndExpand"
-                    Margin="0,0,0,-100"
+                    VerticalOptions="Fill"
+                    HorizontalOptions="Fill"
                     Direction="Row"
                     Wrap="Wrap"
-                    Padding="15"
+                    Margin="0,0,0,100"
                     AlignContent="Start"
                     AlignItems="Start"
                     JustifyContent="SpaceBetween">
@@ -353,7 +349,7 @@
                      <BoxView
                         Margin="0,20"
                         HeightRequest="1"
-                        BackgroundColor="DimGray"
+                        Color="DimGray"
                         FlexLayout.Basis="100%" />
 
                     <Button
@@ -363,7 +359,7 @@
                         Style="{StaticResource BookingButton}"
                         Text="Book a Flight" />
                 </FlexLayout>
-
+                </Grid>
 
 
             </StackLayout>

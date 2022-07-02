@@ -15,6 +15,8 @@
         <Style TargetType="Entry">
             <Setter Property="BackgroundColor"
                     Value="{AppThemeBinding Light=White, Dark=#999999}"/>
+            <Setter Property="HeightRequest" Value="{OnIdiom 44, Tablet=66, Desktop=66}"/>
+            <Setter Property="FontSize" Value="{OnIdiom 24, Phone=14}"/>
         </Style>
         <Style TargetType="Button">
             <Setter Property="HeightRequest" Value="66"/>
@@ -22,6 +24,7 @@
                     Value="{AppThemeBinding Light=OrangeRed, Dark=#FF3300}"/>
             <Setter Property="TextColor"
                     Value="{AppThemeBinding Light=White, Dark=#333333}"/>
+            <Setter Property="FontSize" Value="{OnIdiom 24, Phone=14}"/>
         </Style>
         <Style TargetType="CheckBox">
             <Setter Property="Color"
@@ -34,40 +37,42 @@
     </ContentPage.Resources>
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout
-                VerticalOptions="Fill"
-                Margin="30,0">
-                <ImageButton
-                    Source="{FontImage 
-                                FontFamily={StaticResource FontAwesome}, 
-                                Glyph={x:Static local:IconFont.PaperPlane}, 
-                                Color=White,
-                                Size=64}"
-                    HorizontalOptions="Center"
-                    BackgroundColor="Transparent"
-                    Margin="0,0,0,100"
-                    
-                    Clicked="ImageButton_Clicked"/>
-                <Entry
-                    Placeholder="Username" />
-                <Entry
-                    Placeholder="Password"
-                    IsPassword="True" />
-                <Button
-                    Text="Login"
-                    Clicked="Button_Clicked" />
+            <Grid>
                 <StackLayout
-                    Orientation="Horizontal"
-                    Spacing="0"
-                    HorizontalOptions="Center">
-                    <CheckBox
-                        x:Name="RememberCheck"
-                        VerticalOptions="Center"/>
-                    <Label
-                        Text="Remember Me"
-                        VerticalTextAlignment="Center" />
+                    VerticalOptions="Center"
+                    Margin="30,0">
+                    <ImageButton
+                        Source="{FontImage 
+                                    FontFamily={StaticResource FontAwesome}, 
+                                    Glyph={x:Static local:IconFont.PaperPlane}, 
+                                    Color=White,
+                                    Size=64}"
+                        HorizontalOptions="Center"
+                        BackgroundColor="Transparent"
+                        Margin="0,0,0,100"
+                    
+                        Clicked="ImageButton_Clicked"/>
+                    <Entry
+                        Placeholder="Username" />
+                    <Entry
+                        Placeholder="Password"
+                        IsPassword="True" />
+                    <Button
+                        Text="Login"
+                        Clicked="Button_Clicked" />
+                    <StackLayout
+                        Orientation="Horizontal"
+                        Spacing="0"
+                        HorizontalOptions="Center">
+                        <CheckBox
+                            x:Name="RememberCheck"
+                            VerticalOptions="Center"/>
+                        <Label
+                            Text="Remember Me"
+                            VerticalTextAlignment="Center" />
+                    </StackLayout>
                 </StackLayout>
-            </StackLayout>
+            </Grid>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

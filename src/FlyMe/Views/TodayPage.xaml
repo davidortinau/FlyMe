@@ -25,7 +25,7 @@
     
     <CollectionView>
         <CollectionView.EmptyView>
-            <FlexLayout Direction="Column" JustifyContent="Center" 
+            <VerticalStackLayout  
                         Margin="20,0">
                 <Image Margin="0,0,0,10">
                     <Image.Source>
@@ -71,7 +71,7 @@
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>-->
-            </FlexLayout>
+            </VerticalStackLayout>
         </CollectionView.EmptyView>
     </CollectionView>
 </ContentPage>

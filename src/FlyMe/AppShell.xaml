@@ -54,7 +54,7 @@
     </FlyoutItem>
 
     <MenuItem
-        Text="Logout"
+        Text="Logout" 
         Clicked="MenuItem_Clicked"
         IconImageSource="{FontImage FontFamily={StaticResource FontAwesome},
                 Glyph={x:Static local:IconFont.DoorOpen}, Color=Black,Size=16
@@ -82,7 +82,6 @@
                         FontFamily="{StaticResource FontAwesome}"
                         Size="32"
                         Color="GhostWhite" />
-
                 </Image.Source>
             </Image>
         </Grid>
@@ -103,6 +102,46 @@
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
         </Tab>
     </TabBar>-->
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="15,40,15,*"
+                  StyleClass="FlyoutItemLayoutStyle">
+                
+                <Label Text="{Binding Title}"
+                       Grid.Column="3"
+                       VerticalOptions="Fill"
+                       VerticalTextAlignment="Center"
+                       x:Name="FlyoutItemLabel"
+                       />
+                <Image Source="{Binding FlyoutIcon}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       Grid.Column="1"/>
+            </Grid>
+
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="15,40,15,*"
+                  StyleClass="FlyoutItemLayoutStyle">
+                
+                <Label Text="{Binding Text}"
+                       Grid.Column="3"
+                       VerticalOptions="Fill"
+                       VerticalTextAlignment="Center"
+                       x:Name="FlyoutItemLabel"
+                       />
+                <Image Source="{Binding Icon}"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Center"
+                       Grid.Column="1"/>
+            </Grid>
+
+        </DataTemplate>
+    </Shell.MenuItemTemplate>
 
 
 </Shell>
